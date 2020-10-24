@@ -1,8 +1,8 @@
 # Today I(DOWON) Learned
-![TIL](https://images.velog.io/images/anrun/post/127e6ad3-54dd-4e78-b228-57714badf513/Vintage_23-05-2020_18h13m35s.png)
-모든 순간의 "오늘"들이 모여 하나의 페이지를 만듭니다.
-</br>
-Today DOWON Learnd는 [이곳](https://2dowon.netlify.app/)에서 보실 수 있습니다.
+[![TIL](./content/assets/TIL.png)](https://2dowon.netlify.app/)
+### 모든 순간의 배움을 기록하고자 합니다.
+
+### 👉 Today DOWON Learnd가 궁금하시면 이미지를 클릭해주세요!
 
 
 </br>
