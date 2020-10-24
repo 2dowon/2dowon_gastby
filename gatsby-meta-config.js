@@ -9,7 +9,7 @@ module.exports = {
     github: `2dowon`, // Your GitHub account
     medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
-    tistory: `https://dwon-lee.tistory.com`,
+    linkedin: ``, // Your LinkedIn account
   },
   icon: `content/assets/felog.png`, // Add your favicon
   keywords: [`blog`],
