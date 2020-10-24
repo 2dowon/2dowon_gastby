@@ -2,7 +2,7 @@ module.exports = {
   title: `Today DOWON Learnd`,
   description: `배운 것을 기록합니다.`,
   author: `2dowon`,
-  introduction: `데이터와 디자인을 좋아하는 개발자 입니다.`,
+  introduction: `모든 순간의 배움을 기록하고자 합니다.`,
   siteUrl: `https://2dowon.netlify.com`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account

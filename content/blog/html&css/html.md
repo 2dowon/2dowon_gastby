@@ -6,6 +6,13 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
+### HTML 공부한 내용을 나중에 찾아보기 쉽게 정리했습니다. HTML 개념 정리는 이 포스트에 계속 업로드하고 있습니다.
+
+</br>
+</br>
+
+---
+
 # HTML
 
 - [HTML](#HTML)

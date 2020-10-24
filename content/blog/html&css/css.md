@@ -6,13 +6,47 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
+### CSS 공부한 내용을 나중에 찾아보기 쉽게 정리했습니다. CSS 개념 정리는 이 포스트에 계속 업로드하고 있습니다.
+
+</br>
+</br>
+
+---
+
 # CSS
 
 - [CSS](#CSS)
 - [Selectors](#Selectors)
+    - [Type, Class & ID Selector](#Type,-Class-&-ID-Selector)
+        - [Type Selector](#Type-Selector)
+        - [Class Selector](#Class-Selector)
+        - [ID Selector](#ID-Selector)
+    - [Child, Descendant & Sibling Combinators](#Child,-Descendant-&-Sibling-Combinators)
+        - [Child](#Child)
+        - [Descendant](#Descendant)
+        - [Sibling Combinators](#Sibling-Combinators)
+    - [Structural Pseudo-classes](#Structural-Pseudo-classes)
+        - [element:first-child](#element:first-child)
+        - [element:last-child](#element:last-child)
+        - [element:nth-child(n)](#element:nth-child(n))
+    - [Structural Pseudo-classes](#Structural-Pseudo-classes)
+        - [User Action Pseudo-classes](#User-Action-Pseudo-classes)
+    - [CSS 선택자 우선순위](#CSS-선택자-우선순위)
 - [Box](#Box)
+    - [Box Model](#Box-Model)
+    - [Box Sizing](#Box-Sizing)
+    - [Box](#Box)
+        - [Block](#Block)
+        - [Inline](#Inline)
+        - [Inline Block](#Inline-Block)
+        - [Flex](#Flex)
 - [Float](#Float)
 - [Position](#Position)
+    - [static](#static)
+    - [relative](#relative)
+    - [absolute](#absolute)
+    - [fixed](fixed)
+    - [sticky](sticky)
 - [Flex Box](#Flex-Box)
 - [Media Query](#[Media-Query)
 - [Typography](#Typography)
@@ -188,6 +222,7 @@ ID는 단 하나만 존재할 수 있음 ⇒ 중복 사용 불가능
 - section의 자식은 h1, ul이고, li는 section의 자식은 아니지만 section의 자손이고  ul의 자식이다.
 - li 안에 있는 h1과 p는 li의 자식이고, h1과 p는  서로 형제이다
 - 자손 안에는 모든 자식이 해당 되기에 모든 자식은 자손이다.
+
 </br>
 
 ### Child 자식 선택자
