@@ -1,8 +1,8 @@
 # Today I(DOWON) Learned
 [![TIL](./content/assets/TIL.png)](https://2dowon.netlify.app/)
-### 모든 순간의 배움을 기록하고자 합니다.
+#### 모든 순간의 배움을 기록하고자 합니다.
 
-### 👉 Today DOWON Learnd가 궁금하시면 이미지를 클릭해주세요!
+#### 👉 Today DOWON Learnd가 궁금하시면 이미지를 클릭해주세요!
 
 
 </br>
