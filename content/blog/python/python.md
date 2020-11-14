@@ -6,4 +6,4 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-test
+test 수정
