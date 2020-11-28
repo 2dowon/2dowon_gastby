@@ -45,7 +45,7 @@ export const Bio = () => (
                       Facebook
                     </a>
                   )}
-                  {social.tistory && (
+                  {social.linkedin && (
                     <a href={`https://${social.linkedin}.tistory.com`}>
                       Tistory
                     </a>
