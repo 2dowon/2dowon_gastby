@@ -1,8 +1,8 @@
 module.exports = {
   title: `Today DOWON Learnd`,
-  description: `배운 것을 기록합니다.`,
+  description: `Blog posted today I learned`,
   author: `2dowon`,
-  introduction: `모든 순간의 배움을 기록하고자 합니다.`,
+  introduction: `프론트엔드와 백엔드 그 사이 갈림길에서 기록 중`,
   siteUrl: `https://2dowon.netlify.com`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
@@ -12,7 +12,7 @@ module.exports = {
     linkedin: `dwon-lee`, // Your Tistory account
   },
   icon: `content/assets/felog.png`, // Add your favicon
-  keywords: [`blog`],
+  keywords: [`blog`, 'backend', 'python', 'flask', 'development'],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
     utterances: '2dowon/2dowon_gastby', // Your repository for archive comment
