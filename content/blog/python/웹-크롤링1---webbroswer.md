@@ -1,5 +1,5 @@
 ---
-title: 파이썬 웹 크롤링1 - webbroswer
+title: 웹 크롤링1 - webbroswer
 date: 2020-11-25 00:11:23
 category: python
 thumbnail: { thumbnailSrc }

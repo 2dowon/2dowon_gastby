@@ -1,5 +1,5 @@
 ---
-title: 파이썬 웹 크롤링4 - Chrome driver
+title: 웹 크롤링4 - Chrome driver
 date: 2020-11-28 00:11:23
 category: python
 thumbnail: { thumbnailSrc }
