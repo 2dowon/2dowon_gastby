@@ -15,7 +15,7 @@ module.exports = {
   keywords: [`blog`, 'backend', 'python', 'flask', 'development'],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
-    utterances: '2dowon/2dowon_gastby', // Your repository for archive comment
+    utterances: '2dowon/TIL', // Your repository for archive comment
   },
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
