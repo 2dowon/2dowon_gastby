@@ -4,8 +4,6 @@ module.exports = {
   author: `2dowon`,
   introduction: `프론트엔드와 백엔드 그 사이 갈림길에서 기록 중`,
   siteUrl: `https://2dowon.netlify.app`, // Your blog site url
-  sitemapPath: `https://2dowon.netlify.app/sitemap.xml`,
-  robotsPolicy: [{ userAgent: '*', allow: '/' }],
   social: {
     twitter: ``, // Your Twitter account
     github: `2dowon`, // Your GitHub account
