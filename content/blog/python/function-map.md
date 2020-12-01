@@ -1,5 +1,5 @@
 ---
-title: [python] 내장함수 map()
+title: [python] 내장함수 map
 date: 2020-12-01 23:12:91
 category: python
 thumbnail: { thumbnailSrc }
@@ -20,16 +20,14 @@ map(변환 함수, 순회 가능한 데이터)
 
 map 만 사용해 출력하면 아래 코드처럼 맵 객체가 만들어져 그 주소값이 출력된다. 따라서 맵 객체 안에 있는 내용을 보기 위해서는 list를 사용해야 한다.
 
-  ```python
-  a = [1.2, 2.5, 3.7, 4.6]
-  a = map(int, a)
-  print(a)
+```python
+a = [1.2, 2.5, 3.7, 4.6]
+a = map(int, a)
+print(a)
 
-  # <map object at 0x7fc7c673b2e0>
-  ```
+# <map object at 0x7fc7c673b2e0>
+```
 
-
- 
 ### map() 사용 예제
 
 - 실수형을 정수형으로 변환
