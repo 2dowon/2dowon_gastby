@@ -1,5 +1,5 @@
 ---
-title: Python - map()
+title: 파이썬 내장함수 map
 date: 2020-12-02 00:12:30
 category: python
 thumbnail: { thumbnailSrc }
