@@ -1,5 +1,5 @@
 ---
-title: Start Flask
+title: Flask 시작하기
 date: 2020-11-15 00:11:75
 category: python
 thumbnail: { thumbnailSrc }
