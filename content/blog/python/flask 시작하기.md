@@ -1,5 +1,5 @@
 ---
-title: 파이썬 Flask 사용법
+title: Start Flask
 date: 2020-11-15 00:11:75
 category: python
 thumbnail: { thumbnailSrc }
