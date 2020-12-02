@@ -55,7 +55,7 @@ draft: false
 
 </br>
 
-## 조건문을 포함한 리스트 컴프리헨션
+## 조건문을 포함한 List Comprehesion
 
 ```python
 [<반복 실행문> for <반복 변수> in <반복 범위> **if <조건문>**]
