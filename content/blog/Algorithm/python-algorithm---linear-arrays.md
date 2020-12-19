@@ -1,7 +1,7 @@
 ---
-title: Python Algorithm - 선형 배열(Linear Arrays)
-date: 2020-12-19 21:12:07
-category: Algorithm
+title: python algorithm - Linear arrays
+date: 2020-12-19 21:12:82
+category: algorithm
 thumbnail: { thumbnailSrc }
 draft: false
 ---

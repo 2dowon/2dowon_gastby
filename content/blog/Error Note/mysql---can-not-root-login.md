@@ -1,7 +1,7 @@
 ---
-title: MySQL - root 로그인이 안될 때
-date: 2020-12-16 23:12:59
-category: Error Note
+title: mysql - can not root login
+date: 2020-12-19 21:12:20
+category: error note
 thumbnail: { thumbnailSrc }
 draft: false
 ---
@@ -47,7 +47,7 @@ MySQL Workbench는 [여기서](https://dev.mysql.com/downloads/workbench/) 다�
 </br>
 </br>
 
-# MySQL을 설치하고 설정할 때 사용했던 명령어
+# MySQL 기본 명령어
 
 - `mysql.server start` 서버를 시작하는 명령어로 제일 먼저 해야 한다
 - `mysql -u root -p` root 사용자로 데이터베이스에 접속하기 위한 명령어
