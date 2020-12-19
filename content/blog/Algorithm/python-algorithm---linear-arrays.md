@@ -1,5 +1,5 @@
 ---
-title: python algorithm - Linear arrays
+title: Python Algorithm - 선형 배열(Linear arrays)
 date: 2020-12-19 21:12:82
 category: algorithm
 thumbnail: { thumbnailSrc }
