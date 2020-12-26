@@ -1,14 +1,14 @@
 ---
-title: Python Algorithm - 선형 배열(Linear arrays)
+title: Python Algorithm - 선형 배열(Linear Arrays)
 date: 2020-12-19 21:12:82
 category: algorithm
 thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-선형 배열 (Linear Arrays)은 데이터들이 선 (line) 처럼 일렬로 늘어선 형태를 말한다.
-
 </br>
+
+선형 배열 (Linear Arrays)은 데이터들이 선 (line) 처럼 일렬로 늘어선 형태를 말한다.
 
 ## 배열
 
@@ -24,8 +24,6 @@ draft: false
 </br>
 
 # Python 리스트에 활용할 수 있는 연산들
-
-</br>
 
 ## 리스트 길이과 관계 없이 빠르게 실행 결과를 보게되는 연산들 ⇒ 상수 시간 O(1)
 
