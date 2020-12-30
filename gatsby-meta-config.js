@@ -8,11 +8,11 @@ module.exports = {
     twitter: ``, // Your Twitter account
     github: `2dowon`, // Your GitHub account
     medium: ``, // Your Medium account
-    facebook: ``, // Your Facebook account
+    facebook: `12a834e8c22c4808989cdd02460dfa0b`, // Your Notion account
     linkedin: `dwon-lee`, // Your Tistory account
   },
   icon: `content/assets/felog.png`, // Add your favicon
-  keywords: [`blog`, 'backend', 'python', 'flask', 'development'],
+  keywords: [`blog`, 'backend', 'python', 'TIL', 'development'],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
     utterances: '2dowon/TIL', // Your repository for archive comment

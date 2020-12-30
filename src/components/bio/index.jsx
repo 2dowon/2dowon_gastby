@@ -41,8 +41,8 @@ export const Bio = () => (
                     </a>
                   )}
                   {social.facebook && (
-                    <a href={`https://www.facebook.com/${social.facebook}`}>
-                      Facebook
+                    <a href={`https://www.notion.so/${social.facebook}`}>
+                      Notion
                     </a>
                   )}
                   {social.linkedin && (
