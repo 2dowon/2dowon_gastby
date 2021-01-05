@@ -101,6 +101,12 @@ MySQL 5.1.17 이후부터 보안을 위해서 파일 입/출력 전용 경로를
 3. my.ini 파일을 저장하고 MySQL 서버를 재시작하기
    <img src="./image/csv4.png"  width="700" height="200">
 
+## Error Code : 1406 - Data too long 해결하기
+데이터베이스에 지정해 놓은 길이보다 데이터의 길이가 더 길 경우에 발생하는 에러이다. column의 데이터 크기를 직접 수정해줘도 가능하지만, strict mode를 비활성화시키는 방법으로도 해결할 수 있다.  strict mode는 MySQL 5.x 버전부터 기본값으로 적용되었는데, 데이터베이스를 안정성 있게 관리해주는 모드이다. 따라서 개인적으로는 1406 에러가 발생하면 그때 데이터베이스를 수정하는 것을 추천한다.
+
+ 그래도 strict mode를 비활성화 시키는 법을 알아보면 1290 에러를 해결하듯이 my.ini 파일을 수정해야 한다. my.ini 파일에서 sql-mode를 찾아 STRICT_TRANS_TABLES를 지워주면 끝! my.ini 파일을 수정 할 때는 반드시 명령 프롬프트를 관리자 권한으로 실행하고, 수정 후에는 MySQL 서버를 재시작해야 한다.
+
+
 </br>
 
 # Table Data Import Wizard로 테이블에 데이터 넣기
