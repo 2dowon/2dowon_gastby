@@ -8,6 +8,8 @@ draft: false
 
 학원에서 오늘의 숙제 느낌으로 구글 스프레드 시트에 있는 수강생 리스트로 데이터베이스를 만들게 되었다. 사실 수강생 리스트가 많진 않아서 하나 하나 데이터를 insert해도 되지만, 개인적으로 csv파일을 바로 데이터베이스의 테이블로 Import하고 싶었다.
 
+# LOAD DATA INFILE로 테이블에 데이터 넣기
+
 ## 1. 데이터베이스와 테이블 만들기
 
 ```sql
@@ -72,37 +74,42 @@ SET name = @name,
 
 firstNum, midNum, lastNum, addr1, addr2, email1, email2 은 csv 파일에 데이터가 없기 때문에 기존 데이터를 이용해서 입력해야 한다. SUBSTRING_INDEX, REPLACE 등 함수를 이용해서 넣기!
 
-csv파일을 테이블로 Import 하는 것은 MySQL Workbench에서 Table Data Import Wizard로 더 쉽게 할 수 있는데, `LOAD DATA INFILE` 문법을 연습해보고 싶어서 이렇게 진행했다. 근데 Mac에서 복습할 때는 1290 에러를 해결하지 못해서 결국 Table Data Import Wizard를 이용했는데, 이는 아래에서 확인할 수 있다.
+사실 csv파일을 테이블로 Import 하는 것은 MySQL Workbench에서 Table Data Import Wizard로 더 쉽게 할 수 있는데, `LOAD DATA INFILE` 문법을 연습해보고 싶어서 이렇게 진행했다. 근데 Mac에서 복습할 때는 1290 에러를 해결하지 못해서 결국 Table Data Import Wizard를 이용했는데, 이는 아래에서 확인할 수 있다.
+
+</br>
 
 ### playdata.csv 파일 예시
 
 개인정보가 많이 포함된 파일이라 원본 데이터를 공개하지는 못하지만, 아래 사진처럼 첫 줄에는 칼럼 명이 적혀있고, 두번째 줄부터 해당 데이터가 콤마(,)로 구분되어 저장되어 있다.
 
-![csv%E1%84%91%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20Import%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%200be8f9a349604cafaa845a3c0083dac8/Untitled.png](csv%E1%84%91%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20Import%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%200be8f9a349604cafaa845a3c0083dac8/Untitled.png)
+<img src="./image/csv1.png"  width="700" height="70">
 
-# Error Code : 1290 해결하기
+## Error Code : 1290 해결하기
 
 MySQL 5.1.17 이후부터 보안을 위해서 파일 입/출력 전용 경로를 지정할 수 있다고 한다. 보통은 C:/ProgramData/MySQL/MySQL Server 8.0/Uploads 이 경로가 기본 설정되어 있는데, 이 경로가 수정되었거나 다른 경로에 입/출력을 원할 경우에는 경로를 my.ini 파일을 통해 수정할 수 있다.
 
 > Window 환경에서 my.ini 파일 수정하기
 
 1. 명령 프롬프트를 관리자 권한으로 실행해서 my.ini 파일 열기
-
-   ![csv%E1%84%91%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20Import%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%200be8f9a349604cafaa845a3c0083dac8/Untitled%201.png](csv%E1%84%91%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20Import%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%200be8f9a349604cafaa845a3c0083dac8/Untitled%201.png)
+   <img src="./image/csv2.png"  width="700" height="500">
 
 2. Secure File Priv 부분을 찾아서 아래처럼 되어있는지 확인하기
-
-   ![csv%E1%84%91%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20Import%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%200be8f9a349604cafaa845a3c0083dac8/Untitled%202.png](csv%E1%84%91%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20Import%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%200be8f9a349604cafaa845a3c0083dac8/Untitled%202.png)
+   <img src="./image/csv3.png"  width="600" height="70">
 
    만약 옵션을 여러 번 쓰는 경우 가장 마지막의 경로만 적용되므로 조심!
 
 3. my.ini 파일을 저장하고 MySQL 서버를 재시작하기
+   <img src="./image/csv4.png"  width="700" height="200">
 
-   ![csv%E1%84%91%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20Import%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%200be8f9a349604cafaa845a3c0083dac8/Untitled%203.png](csv%E1%84%91%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20Import%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%200be8f9a349604cafaa845a3c0083dac8/Untitled%203.png)
+</br>
 
-# Error Code : 1290을 해결하지 못했다면 Table Data Import Wizard 이용하기
+# Table Data Import Wizard로 테이블에 데이터 넣기
 
-Mac에서는 Error Code : 1290을 해결하지 못해서 MySQL Workbench에서 Table Data Import Wizard를 이용해 CSV 파일을 Import 했다. 그리고 중간에 Data too long 에러가 발생했는데, 이 에러도 Window에서는 my.ini 파일에서 strict mode를 삭제하면 해결됐는데 Mac에서는 수정이 불가능해 칼럼 자체를 데이터 크기를 늘려서 수정해서 해결했다. (참고로 Data too long 에러는 csv파일의 데이터가 내가 지정한 데이터의 크기보다 더 큰 경우에 데이터가 잘리면서 발생한 것이다.)
+Mac에서는 Error Code : 1290을 해결하지 못해서 **MySQL Workbench에서 Table Data Import Wizard** 를 이용해 CSV 파일을 Import 했다. 데이터베이스는 미리 만들어야 하고, 테이블은 Table Data Import Wizard로 데이터를 넣을 때 만들면 된다.
+
+이 경우에는 csv 파일에 있는 데이터로 테이블이 만들어지기 때문에 firstNum, midNum, lastNum, addr1, addr2, email1, email2 처럼 csv파일에 없는 데이터는 테이블에 따로 column을 추가한 뒤 기존 데이터를 이용해 update하면 된다.
+
+TIP. csv파일의 첫 줄에 column 명이 적혀있다면 자동으로 그 이름으로 column명이 만들어진다.
 
 ```sql
 CREATE DATABASE playdata;
@@ -111,7 +118,7 @@ USE playdata;
 -- palydata의 Tables 오른쪽 버튼 Table Data Import Wizard를 통해 csv파일 import하기
 
 -- num을 1부터 시작할 수 있도록 (기존 데이터는 0부터 시작)
-SET SQL_SAFE_UPDATES = 0;
+SET SQL_SAFE_UPDATES = 0; -- 일시적으로 safe_mode  해제하기
 UPDATE member SET num = NULL;
 ALTER TABLE member MODIFY COLUMN num INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY;
 
@@ -167,6 +174,10 @@ SELECT name, major AS '비전공' FROM member
 SELECT COUNT(*) AS '비전공자 수' FROM member
    WHERE major NOT IN ('컴퓨터공학과', '빅데이터', '수학과', '경영학과') ;
 ```
+
+중간에 Data too long 에러가 발생했는데, 이 에러도 Window에서는 my.ini 파일에서 strict mode를 삭제하면 해결됐는데 Mac에서는 수정이 불가능해 칼럼 자체를 데이터 크기를 늘려서 수정해서 해결했다. (참고로 Data too long 에러는 csv파일의 데이터가 내가 지정한 데이터의 크기보다 더 큰 경우에 데이터가 잘리면서 발생한 것이다.)
+
+</br>
 
 # 참고
 
