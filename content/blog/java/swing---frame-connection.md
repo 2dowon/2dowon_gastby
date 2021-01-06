@@ -1,7 +1,7 @@
 ---
 title: Java Swing - 화면(프레임) 연결
 date: 2020-12-18 15:12:16
-category: error note
+category: java
 thumbnail: { thumbnailSrc }
 draft: false
 ---
