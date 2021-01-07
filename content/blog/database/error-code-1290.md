@@ -1,38 +1,39 @@
 ---
-title: Error Code 1290 - 파일 입출력 경로 설정 (secure-file-priv)
+title: MySQL - Error Code 1290. 파일 입출력 경로 설정 (secure-file-priv)
 date: 2021-01-06 16:01:66
 category: database
 thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-MySQL 5.1.17 이후부터 보안을 위해서 파일 입/출력 전용 경로를 지정할 수 있다고 한다. 보통은 (Window 기준) C:/ProgramData/MySQL/MySQL Server 8.0/Uploads 이 경로가 기본 설정되어 있는데, 이 경로가 수정되었거나 다른 경로에 입/출력을 원할 경우에는 경로를 (Window)my.ini 또는 (Mac)my.cnf 파일을 통해 수정할 수 있다.
+Error Code : 1290. The MySQL server is running with the --secure-file-priv option so it cannot execute this statement
+
+이 에러는 파일의 입출력 경로가 다를 경우에 발생하는 에러이다. MySQL 5.1.17 이후부터 보안을 위해서 파일 입/출력 전용 경로를 지정할 수 있기 때문이다. 보통은 (Window 기준) C:/ProgramData/MySQL/MySQL Server 8.0/Uploads 이 경로가 기본 설정되어 있는데, 이 경로가 수정되었거나 다른 경로에 입/출력을 원할 경우에는 경로를 (Window)my.ini 또는 (Mac)my.cnf 파일을 통해 secure-file-priv를 수정하면 해결할 수 있다.
 
 </br>
 
-# Window
-
-## my.ini 파일 수정하기
+# Window - my.ini 파일 수정하기
 
 ### 1. 명령 프롬프트를 관리자 권한으로 실행해서 my.ini 파일 열기
 
 <img src="./image/csv2.png"  width="700" height="500">
 
-### 2. Secure File Priv 부분을 찾아서 아래처럼 되어있는지 확인하기
+### 2. secure-file-priv 수정하기
+
+secure-file-priv이 아래 사진과 같다면 아래 경로처럼 :/ProgramData/MySQL/MySQL Server 8.0/Uploads 폴더 안에 입력하고자 하는 데이터 파일이 있으면 된다. 다른 경로에 있는 파일도 자유롭게 입력하고 싶은 경우에는 아예 아예 경로를 지정하지 않으면 된다. 이 경우, 쌍따옴표 안에 아무것도 작성하지 않으면 된다.
+
+⚠️ 만약 옵션을 여러 번 쓰는 경우 가장 마지막의 경로만 적용되므로 조심!
 
 <img src="./image/csv3.png"  width="600" height="70">
-
-만약 옵션을 여러 번 쓰는 경우 가장 마지막의 경로만 적용되므로 조심! 경로를 아예 지정하고 싶지 않다면 쌍따옴표 안에 아무것도 작성하지 않으면 된다.
 
 ### 3. my.ini 파일을 저장하고 MySQL 서버를 재시작하기
 
 <img src="./image/csv4.png"  width="700" height="200">
 
 </br>
+</br>
 
-# Mac
-
-## my.cnf 파일 수정하기
+# Mac - my.cnf 파일 수정하기
 
 ### 1. my.cnf 파일 찾기
 
@@ -40,9 +41,9 @@ Mac은 Window와 다르게 my.ini 파일이 아닌 my.cnf 파일이다. 이 파�
 
 <img src="./image/error1290_1.png"  width="700" height="500">
 
-### 2. my.cnf 파일에서 secure file priv 수정하기
+### 2. my.cnf 파일에서 secure-file-priv 수정하기
 
-위 방법으로 경로를 찾은 후 my.cnf 파일을 텍스트 편집기로 열어서 secure-file-priv 부분을 수정해주면 된다. 파일을 입출력하고자 하는 경로를 직접 적어도 좋고, 나는 경로를 아예 지정하지 않는 방법을 선택했다. 아래 사진처럼 secure-file-priv = "" 이 부분을 적으면 되는데 쌍따옴표 안에 원하는 경로를 적거나 지정하지 않을 경우 빈칸으로 두면 된다.
+위 방법으로 경로를 찾은 후 my.cnf 파일을 텍스트 편집기로 열어서 secure-file-priv 부분을 수정해주면 된다. 파일을 입출력하고자 하는 경로를 직접 적어도 좋고, 나는 경로를 아예 지정하지 않는 방법을 선택했다. 아래 사진처럼 `secure-file-priv = ""` 이 부분을 적으면 되는데 쌍따옴표 안에 원하는 경로를 적거나 지정하지 않을 경우 빈칸으로 두면 된다.
 
 <img src="./image/error1290_2.png"  width="400" height="70">
 
@@ -64,8 +65,9 @@ my.cnf 파일을 수정한 후에는 MySQL 서버를 재시작해서 적용한�
 
 <img src="./image/error1290_5.png"  width="700" height="200">
 
-단, 이 경우에는 데이터 파일에 들어있는 데이터로만 일단 테이블이 만들어진다. 따라서 데이터를 활용하여 새로운 column을 만들고 싶다면 `ALTER TABLE 테이블명 ADD COLUMN 칼럼명;` 을 이용해 column을 먼저 새로 만든 후에 UPDATE문으로 데이터를 입력하면 된다.
+단, 이 경우에는 데이터 파일에 들어있는 데이터로만 일단 테이블이 만들어진다. 따라서 데이터를 활용하여 새로운 column을 만들고 싶다면 `ALTER TABLE 테이블명 ADD COLUMN 칼럼명;` 을 이용해 column을 먼저 새로 만든 후에 UPDATE문으로 데이터를 입력하면 된다. [csv파일 Import하는 법](https://2dowon.netlify.app/database/mysql---import-csv-file-to-table/)에 대해 작성한 이 글을 참고!
 
+</br>
 </br>
 
 # 참고

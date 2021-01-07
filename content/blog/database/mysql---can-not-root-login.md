@@ -1,7 +1,7 @@
 ---
 title: MySQL - root 로그인이 안될 때
 date: 2020-12-19 21:12:20
-category: mysql
+category: database
 thumbnail: { thumbnailSrc }
 draft: false
 ---
