@@ -6,9 +6,7 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-MySQL에서 데이터를 INSERT할 때 종종 Data too long for column 이 에러를 만나게 된다. 이 에러는 column의 선언된 크기보다 INSERT할 데이터의 크기가 더 클 때 발생한다.
-
-예를 들어, 전화번호의 데이터 크기를 11자리로 선언했는데, 12자리로 잘 못 입력하는 경우에 이와 같은 에러가 발생할 수 있다.
+MySQL에서 데이터를 INSERT할 때 종종 Data too long for column 이 에러를 만나게 된다. 이 에러는 column의 선언된 크기보다 INSERT할 데이터의 크기가 더 클 때 발생한다. 예를 들어, 전화번호의 데이터 크기를 11자리로 선언했는데, 12자리로 잘 못 입력하는 경우에 이와 같은 에러가 발생할 수 있다.
 
 ## Data too long for column 에러 해결 방법
 
@@ -26,13 +24,13 @@ sql_mode의 strict mode를 비활성화시키면 column에 선언된 크기와 I
 
 (Window)my.ini 또는 (Mac)my.cnf 파일에서 sql-mode 부분을 수정해주면 된다.
 
-sql-mode는 기본값으로 아래처럼 "STRICT_TRANS_TABLES, NO_ENGINE_SUBSTITUTION" 이라고 적혀 있다.
-<img src="./image/data_long1.png"  width="600" height="60">
+sql-mode는 기본값으로 아래처럼 "STRICT TRANS TABLES, NO_ENGINE_SUBSTITUTION" 이라고 적혀 있다.
+<img src="./image/data_long1.png"  width="900" height="100">
 
 이 부분에서 아래처럼 STRICT_TRANS_TABLES를 삭제한 후 저장하면 된다.
-<img src="./image/data_long2.png"  width="350" height="60">
+<img src="./image/data_long2.png"  width="600" height="100">
 
-(Window)my.ini 또는 (Mac)my.cnf 파일을 수정하는 방법은 [이 글](https://2dowon.netlify.app/database/error-code-1290/)을 참고!
+✅ (Window)my.ini 또는 (Mac)my.cnf 파일을 수정하는 방법은 [이 글](https://2dowon.netlify.app/database/error-code-1290/)을 참고!
 
 </br>
 
