@@ -6,7 +6,7 @@ lang: "en"
 
 # 이도원 (2dowon)
 
-<div align="right"><sub><i>Last updated: 2021.01.04</i></sub></div>
+<div align="right"><sub><i>Last updated: 2021.01.14</i></sub></div>
 
 ## 안녕하세요👋 저는 `Back-End Engineer` 로 향하고 있습니다.
 
@@ -24,9 +24,9 @@ lang: "en"
 **저는 `_______` 을 배우며 사용하고 있습니다.**
 
 1. Python 3.9
-2. Flask
+2. Django 3.1.5
 3. MySQL 8.0.22
-4. html / css
+4. HTML / CSS
 5. GitHub
 
 |             |                               |
@@ -42,13 +42,13 @@ lang: "en"
 
 ### PLAYBOX
 
-|              |                                                   |
-| -----------: | ------------------------------------------------- |
-|   **period** | 20.12.10 ~ 2020.12.28                             |
-| **projects** | JAVA SWING을 이용한 영화 예매 프로그램            |
-| **position** | Front                                             |
-|   **Skills** | Java 15.0.1, MySQL 8.0.22, Google Cloud Platform  |
-|   **GitHub** | https://github.com/padawanR0k/PD_java_gui_project |
+|              |                                                  |
+| -----------: | ------------------------------------------------ |
+|   **period** | 20.12.10 ~ 2020.12.28                            |
+| **projects** | JAVA SWING을 이용한 영화 예매 프로그램           |
+| **position** | Front                                            |
+|   **Skills** | Java 15.0.1, MySQL 8.0.22, Google Cloud Platform |
+|   **GitHub** | https://github.com/2dowon/Project-PALYBOX        |
 
 <br />
 
