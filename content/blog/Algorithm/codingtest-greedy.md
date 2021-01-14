@@ -1,15 +1,14 @@
 ---
-title: 이것이 코딩테스트다 - 그리디(Greedy)
+title: Algorithm - 그리디(Greedy)
 date: 2021-01-12 23:01:04
 category: algorithm
 thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-> [이것이 취업을 위한 코딩테스트다 with 파이썬](https://www.hanbit.co.kr/store/books/look.php?p_code=B8945183661)를 읽고 정리한 내용입니다.
+</br>
 
-</br>
-</br>
+> [이것이 취업을 위한 코딩테스트다 with 파이썬](https://www.hanbit.co.kr/store/books/look.php?p_code=B8945183661)를 읽고 정리한 내용입니다.
 
 # 그리디 알고리즘 (Greedy Algorithm)
 
