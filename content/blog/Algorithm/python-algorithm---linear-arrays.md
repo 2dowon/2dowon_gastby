@@ -6,12 +6,7 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-> [어서와! 자료구조와 알고리즘은 처음이지?](https://programmers.co.kr/learn/courses/57) 강의를 듣고 정리한 내용입니다.
-
 </br>
-</br>
-
-# 선형 배열(Linear Arrays)
 
 선형 배열 (Linear Arrays)은 데이터들이 선 (line) 처럼 일렬로 늘어선 형태를 말한다.
 
@@ -95,7 +90,7 @@ Python 리스트에 활용할 수 있는 연산들을 공부하다 보니 remove
 </br>
 </br>
 
-# Ref.
+# 참고
 
 - [어서와! 자료구조와 알고리즘은 처음이지?](https://programmers.co.kr/learn/courses/57)
 - [생활코딩 - 배열](https://opentutorials.org/module/1335/8677)
