@@ -1,12 +1,12 @@
 ---
-title: MySQL - DECLARE / SET
+title: MySQL - DECLARE / SET @var_name
 date: 2021-01-16 23:01:16
 category: database
 thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-프로그래머스에서 SQL - GROUP BY 파트의 [입양 시각 구하기(2)](https://programmers.co.kr/learn/courses/30/lessons/59413) 문제를 푸는데, SET을 이용해 변수를 선언해서 해당 변수를 쿼리문 안에서 활용하는 문제였다. SQL을 공부하면서 변수에 대해서는 공부했던 적이 없는 것 같아, 한 번 정리해보려고 한다.
+프로그래머스에서 SQL - GROUP BY 파트의 [입양 시각 구하기(2)](https://programmers.co.kr/learn/courses/30/lessons/59413) 문제를 푸는데, SET을 이용해 변수를 선언해서 해당 변수를 쿼리문 안에서 활용하는 문제였다. SQL을 공부하면서 SQL 변수에 대해서는 공부했던 적이 없는 것 같아, 한 번 정리해보려고 한다.
 
 </br>
 
