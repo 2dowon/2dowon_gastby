@@ -6,7 +6,7 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-프로그래머스에서 SQL - GROUP BY 파트의 [입양 시각 구하기(2)](https://programmers.co.kr/learn/courses/30/lessons/59413) 문제를 푸는데, SET을 이용해 변수를 선언해서 해당 변수를 쿼리문 안에서 활용하는 문제였다. SQL을 공부하면서 SET에 대해서는 공부했던 적이 없는 것 같아, 한 번 정리해보려고 한다.
+프로그래머스에서 SQL - GROUP BY 파트의 [입양 시각 구하기(2)](https://programmers.co.kr/learn/courses/30/lessons/59413) 문제를 푸는데, SET을 이용해 변수를 선언해서 해당 변수를 쿼리문 안에서 활용하는 문제였다. SQL을 공부하면서 변수에 대해서는 공부했던 적이 없는 것 같아, 한 번 정리해보려고 한다.
 
 </br>
 
@@ -26,7 +26,8 @@ draft: false
 
 DECLARE를 이용하면 변수의 타입을 설정할 수 있다. 그래서 보통 SQL에서 변수를 사용할 때는 DECLARE로 변수의 이름과 타입을 설정 한 후, SET을 이용해 그 값을 대입한다.
 
-SQL에서 변수를 선언할 때는 변수명 앞에 @를 붙여야 한다. @가 붙은 변수는 프로시저가 종료되어도 유지된다고 생각하면 된다.
+SQL에서 변수를 선언할 때는 변수명 앞에 @를 붙여야 한다.
+@가 붙은 변수는 프로시저가 종료되어도 유지된다고 생각하면 된다.
 
 ```sql
 DECLARE @var_name INT;
@@ -38,7 +39,7 @@ DECLARE @var_name varchar(20);
 DECLARE로 변수의 타입을 설정하지 않고, 바로 SET을 이용해 한 번에 변수를 선언하고 초기화할 수도 있다. 일반적으로는 `=` 을 이용해서 변수에 값을 대입한다. 이 경우에는 SELECT문과 따로 선언하는 것이므로 쿼리를 각각 실행해야 한다.
 
 ```sql
-SET @var_name = expr [, @var_name = expr]
+SET @var_name = expr [, @var_name = expr] ;
 ```
 
 `:=` 을 이용하면 SELECT문 안에서 선언할 수 도 있다. 하지만 이 경우 정확성을 보장할 수 없어 [MySQL 매뉴얼](https://dev.mysql.com/doc/refman/8.0/en/user-variables.html)에서는 이를 권장하지 않는다.
@@ -67,7 +68,7 @@ ORDER BY HOUR(DATETIME);
 그래서 이 문제를 풀기 위해 구글링을 하는 도중에 아래와 같은 풀이를 알게 되었고, SET 문법을 알게 되었다. 일단 먼저 아래와 같은 풀이를 이용하면 문제에서 원하는 값을 구할 수 있다. SET을 이용해 hour를 변수로 선언한 다음 변수 hour를 이용해서 0시부터 23시까지 루프를 돌려 매 시각마다 입양 건수를 체크하는 것이다.
 
 ```sql
-SET @hour = -1; -- 변수 선언
+SET @hour = -1; -- 변수 선언 및 초기화
 
 SELECT (@hour := @hour + 1) as HOUR,
 (SELECT COUNT(*) FROM ANIMAL_OUTS WHERE HOUR(DATETIME) = @hour) as COUNT
