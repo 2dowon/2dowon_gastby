@@ -42,25 +42,25 @@ lang: "en"
 
 ### PLAYBOX
 
-|              |                                                  |
-| -----------: | ------------------------------------------------ |
-|   **period** | 20.12.10 ~ 2020.12.28                            |
-| **projects** | JAVA SWING을 이용한 영화 예매 프로그램           |
-| **position** | Front                                            |
-|   **Skills** | Java 15.0.1, MySQL 8.0.22, Google Cloud Platform |
-|   **GitHub** | https://github.com/2dowon/Project-PALYBOX        |
+|                 |                                                  |
+| --------------: | ------------------------------------------------ |
+|      **Period** | 20.12.10 ~ 2020.12.28                            |
+| **Description** | JAVA SWING을 이용한 영화 예매 프로그램           |
+|    **Position** | Front                                            |
+|      **Skills** | Java 15.0.1, MySQL 8.0.22, Google Cloud Platform |
+|      **GitHub** | https://github.com/2dowon/Project-PALYBOX        |
 
 <br />
 
 ### DOTTO
 
-|              |                                                             |
-| -----------: | ----------------------------------------------------------- |
-|   **period** | 20.11.09 ~ 2020.11.23                                       |
-| **projects** | 역대 로또 데이터 분석을 기반으로 한 로또 번호 추첨 프로그램 |
-| **position** | Front & Back                                                |
-|   **Skills** | Python3.9, Flask, html, css                                 |
-|   **GitHub** | https://github.com/2dowon/Project-DOTTO                     |
+|                 |                                                             |
+| --------------: | ----------------------------------------------------------- |
+|      **Period** | 20.11.09 ~ 2020.11.23                                       |
+| **Description** | 역대 로또 데이터 분석을 기반으로 한 로또 번호 추첨 프로그램 |
+|    **Position** | Front & Back                                                |
+|      **Skills** | Python3.9, Flask, HTML, CSS                                 |
+|      **GitHub** | https://github.com/2dowon/Project-DOTTO                     |
 
 <br />
 
