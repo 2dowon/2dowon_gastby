@@ -125,7 +125,7 @@ print('재귀적으로 구현:', factorial_recursive(5))
 
 1. 인접 행렬 (Adjacency Matrix)
 
-   <img src="./image/dfs1.png"  width="800" height="250">
+   <img src="./image/dfs1.png"  width="800" height="300">
 
    - 2차원 배열로 그래프의 연결관계를 표현하는 방식
    - 인접 행렬로 표현하기 위해 파이썬에서 2차원 리스트로 구현한다. 연결이 되어 있지 않은 노드끼리는 무한의 비용이라고 작성한다. 보통 999999999 등과 같은 값으로 초기화한다.
