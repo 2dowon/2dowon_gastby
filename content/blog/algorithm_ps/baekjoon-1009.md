@@ -1,10 +1,12 @@
 ---
-title: BAEKJOON - 1009번 분산처리
+title: BAEKJOON - 1009번(Python)
 date: 2021-01-27 23:01:20
 category: algorithm_ps
 thumbnail: { thumbnailSrc }
 draft: false
 ---
+
+# 분산처리
 
 <img src="./image/1009_1.png"  width="600" height="550">
 

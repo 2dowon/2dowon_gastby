@@ -8,7 +8,7 @@ lang: "en"
 
 <div align="right"><sub><i>Last updated: 2021.01.14</i></sub></div>
 
-## 안녕하세요👋 저는 `Back-End Engineer` 로 향하고 있습니다.
+## 안녕하세요👋 
 
 <br />
 
@@ -85,6 +85,6 @@ lang: "en"
 
 <br/>
 
-<sub><sup>Back-End Engineer, <a href="https://github.com/2dowon">@2dowon</a></sup></sub>
+<sub><sup>Junior Developer, <a href="https://github.com/2dowon">@2dowon</a></sup></sub>
 
 </div>

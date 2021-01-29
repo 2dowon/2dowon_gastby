@@ -1,10 +1,12 @@
 ---
-title: BAEKJOON - 1032번 명령 프롬프트
+title: BAEKJOON - 1032번(Python)
 date: 2021-01-28 15:01:89
 category: algorithm_ps
 thumbnail: { thumbnailSrc }
 draft: false
 ---
+
+# 명령 프롬프트
 
 <img src="./image/1032.png"  width="750" height="500">
 
