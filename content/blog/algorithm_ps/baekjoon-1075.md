@@ -1,5 +1,5 @@
 ---
-title: BAEKJOON - 1075번(Python)
+title: BAEKJOON - 1075번 (Python)
 date: 2021-01-29 19:01:37
 category: algorithm_ps
 thumbnail: { thumbnailSrc }
