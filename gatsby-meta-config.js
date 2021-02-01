@@ -8,7 +8,7 @@ module.exports = {
     twitter: ``, // Your Twitter account
     github: `2dowon`, // Your GitHub account
     medium: ``, // Your Medium account
-    facebook: `12a834e8c22c4808989cdd02460dfa0b`, // Your Notion account
+    facebook: `Algorithm-PS-c66a30007251434b9929db9406078a78`, // Your Notion account
     linkedin: `dwon-lee`, // Your Tistory account
   },
   icon: `content/assets/felog.png`, // Add your favicon
