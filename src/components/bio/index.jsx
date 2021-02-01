@@ -40,13 +40,13 @@ export const Bio = () => (
                       Twitter
                     </a>
                   )}
-                  {social.facebook && (
-                    <a href={`https://${social.facebook}.tistory.com`}>
+                  {social.linkedin && (
+                    <a href={`https://${social.linkedin}.tistory.com`}>
                       Tistory
                     </a>
                   )}
-                  {social.linkedin && (
-                    <a href={`https://www.notion.so/${social.linkedin}`}>
+                  {social.facebook && (
+                    <a href={`https://www.notion.so/${social.facebook}`}>
                       Algorithm PS
                     </a>
                   )}
