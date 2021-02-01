@@ -41,13 +41,13 @@ export const Bio = () => (
                     </a>
                   )}
                   {social.facebook && (
-                    <a href={`https://www.notion.so/${social.facebook}`}>
-                      Algorithm PS
+                    <a href={`https://${social.facebook}.tistory.com`}>
+                      Tistory
                     </a>
                   )}
                   {social.linkedin && (
-                    <a href={`https://${social.linkedin}.tistory.com`}>
-                      Tistory
+                    <a href={`https://www.notion.so/${social.linkedin}`}>
+                      Algorithm PS
                     </a>
                   )}
                 </p>
