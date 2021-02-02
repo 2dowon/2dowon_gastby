@@ -6,7 +6,11 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-*args, **kwargs는 무한대로 arguments를 받고 싶을 때 사용한다. 따라서 몇 개의 arguments를 받을지 모르는 함수를 만들 때 주로 사용한다.
+`*args`, `**kwargs`는 무한대로 arguments를 받고 싶을 때 사용한다. 
+
+따라서 몇 개의 arguments를 받을지 모르는 함수를 만들 때 주로 사용한다.
+
+</br>
 
 # *args
 
@@ -52,7 +56,6 @@ plus(1,2,3,4,5,6,7,8,9,10)
 ### plus(a, b, *args)
 
 - 더하기 함수이므로 최소한 2개의 수를 받고 싶다면 아래처럼 a, b는 무조건 받고 그 다음에는 원하는 개수의 arguments를 받을 수 있도록 한다
-- ⚠️  이 때 항상 받고자 하는 인자가 *args *보다 먼저 위치해야 한다.* `plus(*args, a, b)` 라고 적으면 모든 인자가 *args로 전달되기 때문에 a와 b 인자가 존재하지 않는다는 에러가 발생한다.
 
 ```python
 def plus(a, b, *args):
@@ -67,6 +70,18 @@ plus(1,2)
 # 3
 plus(1,2,3,4,5,6,7,8,9,10)
 # 55
+```
+⚠️  이 때 항상 받고자 하는 인자(여기서는 a, b)가 *args보다 먼저 위치해야 한다. `plus(*args, a, b)` 라고 적으면 모든 인자가 *args로 전달되기 때문에 인자 a와 b가 존재하지 않는다는 에러가 발생한다.
+
+```python
+def plus(*args, a , b):
+	result = a+b
+	for number in args:
+		result += number
+	print(result)
+
+plus(1,2,3,4,5,6,7,8,9,10)
+# plus() missing 2 required keyword-only arguments: 'a' and 'b'
 ```
 
 </br>
