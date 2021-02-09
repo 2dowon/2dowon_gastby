@@ -22,7 +22,7 @@ draft: false
 const dowon = { name: "dowon", age: 27 };
 ```
 
-## object를 만드는 방법 : Literals and properties
+## object를 만드는 방법
 
 - object literal syntax 
 
@@ -32,7 +32,12 @@ const dowon = { name: "dowon", age: 27 };
 
     : **`const obj2 = new Object();`** ⇒ class를 이용해서 new를 붙여 만드는 방법
 
-✅      JavaScript는 dynamically typed language이다. 다시 말해, JavaScript는 동적으로 type이 runtime(프로그램이 작동할 때) 때 결정된다. 따라서 object의 property를 중간에 추가하거나 삭제하는 것이 가능하다.
+</br>
+
+### object의 property를 중간에 추가하거나 삭제가 가능
+JavaScript는 dynamically typed language이다. 다시 말해, JavaScript는 동적으로 type이 runtime(프로그램이 작동할 때) 때 결정된다. 따라서 object의 property를 중간에 추가하거나 삭제하는 것이 가능하다.
+
+> "hasjob" property를 중간에 추가 및 삭제 
 
 ```jsx
 const dowon = { name: "dowon", age: 27 };
@@ -45,14 +50,14 @@ console.log(dowon.hasJob); // false
 
 ## Computed properties
 
-### object 안에 있는 data를 접근하는 방법
+### object 안에 있는 data에 접근하는 방법
 
 **1. dot`.` 을 이용해 접근하는 방법**
 
 - 코딩하는 그 순간 key에 해당하는 그 값을 받아오고 싶을 때 사용
 
 ```jsx
-console.log([dowon.name](http://dowon.name/));
+console.log([dowon.name]); // dowon
 ```
 
 **2. Computed properties : 배열에서 데이터를 받아 접근하는 방법** 
@@ -61,15 +66,15 @@ console.log([dowon.name](http://dowon.name/));
 - Computed properties는 정확하게 어떤 key가 필요한지 모를 때, runtime에서 결정될 때 사용
 
 ```jsx
-console.log(dowon[**"name"**]); // dowon
-console.log(dowon[**name**]);  // undefined
+console.log(dowon["name"]); // dowon
+console.log(dowon[name]);  // undefined
 ```
 
 > printValue 함수에서 어떤 obj와 key를 받을지 모르는 경우에는 Computed properties를 이용해야 한다.  `console.log(obj.key);` 는 key라는 property를 찾는 것이므로 적절하지 않다. ⇒ 동적으로 key를 받을 때 유용하다
 
 ```jsx
 function printValue(obj, key) {
-  console.log(**obj[key]**);
+  console.log(obj[key]);
 }
 printValue(dowon, "name"); // dowon
 printValue(dowon, "age"); // 26
@@ -128,13 +133,14 @@ const person4 = new Person("dowon", 26);
 해당하는 object 안에 key가 있는지 없는지를 간단히 확인할 수 있다 ⇒ true/false로 결과를 알려준다
 
 ```jsx
+const dowon = { name: "dowon", age: 27 };
 console.log("name" in dowon); // true
 console.log("age" in dowon); // true
 console.log("random" in dowon); // false
 console.log(dowon.random); // undefined
 ```
 
-## **for..in vs for..of**
+## for..in vs for..of
 
 ### for (key in obj)
 
@@ -148,7 +154,6 @@ for (let key in dowon) {
 }
 // name
 // age
-// hasJob
 ```
 
 ### for (value of iterable)
@@ -163,7 +168,7 @@ for (let value of array) {
 // 1, 2, 3, 4, 5
 ```
 
-## Cloning ⇒ object를 복제/복사하는 방법
+## object를 복제/복사하는 방법
 
 ```jsx
 const user = { name: "dowon", age: "26" };
