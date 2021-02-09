@@ -1,5 +1,5 @@
 ---
-title: function
+title: JavaScript - Function
 date: 2021-02-09 11:02:27
 category: javascript
 thumbnail: { thumbnailSrc }
@@ -30,11 +30,11 @@ function [name](param1, param2, ...param3) {
 
 - premitive parameters
 
-    : passed by value  메모리에 value값이 저장되어 전달
+    : passed by value => 메모리에 value값이 저장되어 전달
 
 - object parameters
 
-    : passed by reference  메모리에 ref값이 저장되어 전달
+    : passed by reference => 메모리에 ref값이 저장되어 전달
 
 ## Default Parameters
 
@@ -99,7 +99,9 @@ printMessage();
 
 ## Return
 
-모든 함수는 `return undefined;`이거나 값을 return한다. return type이 없는 함수들은 `return undefined;`가 생략되어 있는 것이다.
+모든 함수는 `return undefined;`이거나 값을 return한다. 
+
+return type이 없는 함수들은 `return undefined;`가 생략되어 있는 것이다.
 
 > sum 함수에서는 a+b를 리턴한다
 
@@ -148,7 +150,7 @@ printAgain(); // print
 
 ## Callback function
 
-> printYes, printNo 함수가 callback 함수에 해당함
+> 아래 코드에서 printYes, printNo 함수는 callback 함수에 해당
 
 ```jsx
 function randomQuiz(answer, printYes, printNo) {
@@ -178,7 +180,7 @@ randomQuiz("love you", printYes, printNo); // yes!
 
 함수를 간결하게 만들어주는 것으로 항상 이름이 없는 anonymous function이다
 
-> simplePrint!를 출력하는 함수
+> simplePrint! 를 출력하는 함수
 
 ```jsx
 const simplePrint = () => console.log("simplePrint!");
