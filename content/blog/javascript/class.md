@@ -1,5 +1,5 @@
 ---
-title: JavaScript - Class vs Object
+title: JavaScript - Class
 date: 2021-02-09 16:02:24
 category: javascript
 thumbnail: { thumbnailSrc }
