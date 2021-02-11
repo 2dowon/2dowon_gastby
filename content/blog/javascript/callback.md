@@ -23,14 +23,12 @@ draft: false
 
 - webAPI로 지정한 시간이 지나면 지정한 callback 함수를 호출하는 것
 
-> `function () { console.log("2"); }` 이 함수를 callback 함수라고 한다
-
-- 브라우저API는 응답을 기다리지 않고 다음 코드를 먼저 수행하기 때문에 setTimeout을 기다리지 않고, 다음 코드인 '3'을 먼저 출력하고 1초 후에 '2'를 출력하게 된다
+> 브라우저API는 응답을 기다리지 않고 다음 코드를 먼저 수행하기 때문에 setTimeout을 기다리지 않고, 다음 코드인 '3'을 먼저 출력하고 1초 후에 '2'를 출력한다
 
 ```jsx
 console.log("1");
 setTimeout(function () {
-  console.log("2");
+  console.log("2"); // callback 함수
 }, 1000);
 console.log("3");
 // 1 / 3 / 2
@@ -96,7 +94,7 @@ printImmediately와 printWithDelay 함수 선언은 위치에 상관없이 hoist
 
 - callback 함수를 계속 묶어가면서 callback 함수 안에서 다른 callback 함수를 부르는 것을 계속하는 경우
 
-**callback Hell의 문제점**
+### callback Hell의 문제점
 
 - 가독성이 떨어진다
 - 비즈니스로직을 한 번에 이해하기 어렵다
