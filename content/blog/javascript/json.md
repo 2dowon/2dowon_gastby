@@ -1,5 +1,5 @@
 ---
-title: JavaScript - Json
+title: JavaScript - JSON
 date: 2021-02-11 12:02:00
 category: javascript
 thumbnail: { thumbnailSrc }
@@ -45,8 +45,7 @@ draft: false
 
 ## JSON
 
-JavaScript Object Notation
-
+- JavaScript Object Notation
 - simplest data interchange format 데이터를 주고받을 때 쓸 수 있는 가장 간단한 파일 포맷
 - lightweight text-based structure 텍스트를 기반으로 한 가볍고
 - easy to read 사람 눈으로 읽기 편하고
@@ -55,6 +54,8 @@ JavaScript Object Notation
 - independent programming language and platform 프로그래밍 언어나 플랫폼에 상관없이 사용 가능
 
 ✅  Client가 Server에 데이터를 전달할 때나 Server에서 Client에 데이터를 전달할 때 모두 key와 value에 string type으로 변환해 데이터를 전달하여 브라우저에 표기해야 한다. 따라서 object를 serialize해서 string type인 JSON으로 변환하고, JSON을 deserialize해서 object로 다시 변환하는 법을 알아야 한다.
+
+</br>
 
 ### Object to JSON ([stringify](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify))
 
@@ -132,6 +133,8 @@ json = JSON.stringify(rabbit, (key, value) => {
 console.log(json);
 // {"name":"dowon","color":"white","size":null,"birthDate":"2020-08-22T04:51:22.845Z"}
 ```
+
+</br>
 
 ### JSON to Object ([parse](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse))
 
