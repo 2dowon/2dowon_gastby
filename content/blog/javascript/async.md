@@ -1,6 +1,6 @@
 ---
 title: JavaScript - Async 3. async & await
-date: 2021-02-11 18:02:72
+date: 2021-02-12 15:02:46
 category: javascript
 thumbnail: { thumbnailSrc }
 draft: false
