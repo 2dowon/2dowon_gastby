@@ -53,9 +53,3 @@ Github Desktop을 이용하는 경우 main branch에서 수정한 뒤에 Current
 Sourcetree를 이용하는 경우 main branch에서 수정한 뒤에 gh-pages branch로 체크아웃한 다음 origin/main의 원격 저장소 브랜치 추적을 하면 main branch를 추적하게 되고 이 때 pull을 하면 수정한 내용이 gh-pages branch에 업데이트 된다. 업데이트 후에 push하면 수정한 내용이 적용돼서 새롭게 배포된다.
 
 <img src="./image/gh-pages6.png"  width="600" height="330">
-
-</br>
-
-# Ref.
-
-- [코코아톡 클론 코딩 - 노마드 코더 Nomad Coders](https://nomadcoders.co/kokoa-clone)
