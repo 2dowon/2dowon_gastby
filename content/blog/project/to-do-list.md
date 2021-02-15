@@ -11,6 +11,7 @@ draft: false
 </br>
 
 ## Introduction
+Vanlia JavaScript로 만들어본 [blink](https://apps.apple.com/kr/app/blink-%EB%B9%A0%EB%A5%B8%EB%A9%94%EB%AA%A8-%EB%B8%94%EB%A7%81%ED%81%AC/id1182856129)를 닮은 TO DO LIST 입니다. 
 
 깔끔한 것을 좋아해서 단순하면서도 기본 기능에 충실한 TO DO LIST를 만들어보고 싶었습니다. 평소에 자주 사용하는 어플리케이션인 blink는 웹에서는 따로 사용할 수가 없기 때문에 개인적으로 웹에서 사용할 수 있는 TO DO LIST도 좋겠다는 생각에 현재 프로젝트를 진행했습니다.
 
