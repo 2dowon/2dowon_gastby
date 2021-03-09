@@ -6,55 +6,43 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-### HTML 공부한 내용을 나중에 찾아보기 쉽게 정리했습니다. HTML 개념 정리는 이 포스트에 계속 업로드하고 있습니다.
-
-</br>
-</br>
-
----
-
 # HTML
 
-- [HTML](#HTML)
-- [Document](#Document)
-- [Tag](#Tag)
-  - [Headings &amp; Paragraph](#Headings-&-Paragraph)
-  - [Emphasis](#Emphasis)
-  - [Anchor](#Anchor)
-  - [Image](#Image)
-  - [Lists](#Lists)
-  - [Description List](#Description-List)
-  - [Quotations](#Quotations)
-  - [Div & Span](#Div-&-Span)
-  - [Form](#Form)
-  	- [Input](#Input)
-	- [Label](#Label)
-	- [Select & Option](#Select-&-Option)
-	- [Textarea](#Textarea)
-	- [Buttons](#Buttons)
-  - [Table](#Table)
-  - [Media](#Media)
-  - [Address](#Address)
-  - [Abbreviation](#Abbreviation)
-  - [Code & Prefomatted text](#Code-&-Prefomatted-text)
-  - [br](#br)
-  - [hr](#hr)
-- [More..](#More..)
-  - [WAI-ARIA](#WAI-ARIA)
-- [Bookmark](#Bookmark)
+- HTML
+- Document
+- Tag
+  - Headings &amp; Paragraph
+  - Emphasis
+  - Anchor
+  - Image
+  - Lists
+  - Description List
+  - Quotations
+  - Div & Span
+  - Form
+  	- Input
+	- Label
+	- Select & Option
+	- Textarea
+	- Buttons
+  - Table
+  - Media
+  - Address
+  - Abbreviation
+  - Code & Prefomatted text
+  - br
+  - hr
+- More..
+  - WAI-ARIA
+- Bookmark
   - [HTML elements reference](https://developer.mozilla.org/ko/docs/Web/HTML/Element?fbclid=IwAR15AEjrGm_8pbR5iZY0Tx32DsgrS2ks7l_vWiJQZnXFglYg0ew1rnas8a4)
   - [Font Awesome](https://fontawesome.com/icons?m=free)
   - [Google Fonts](https://fonts.google.com)
   - [Can I Use](https://www.caniuse.com)
   - [HTML Usage Data](https://www.advancedwebranking.com/html/)
 
-</br>
-</br>
 
 ---
-
-</br>
-</br>
 
 # HTML
 
@@ -62,20 +50,18 @@ draft: false
 
 웹을 이루는 가장 기초적인 구성 요소로 브라우저(웹 사이트)에 각 요소가 무엇을 뜻하는지 알려준다. 즉, HTML을 **시맨틱(Semantic)** 하게 작성해야 브라우저에게 알맞는 정보를 제공할 수 있다. 또한 HTML은 스크린 리더를 통해 웹페이지를 보는 것이 아니라 _듣는 사용자_ 를 위해 태그를 통해 충분한 정보를 제공해야 하며, 순서를 고려하여 작성해야 한다. 
 
-<br/>
 
-### HTML을 시맨틱(Semantic)하게 작성하려면
+## HTML을 시맨틱(Semantic)하게 작성하려면
 
 1. 웹 페이지의 구획 나누기
 2. 각 구획마다 적절한 Sectioning Elements 정해주기
 3. 최소한의 기능/의미를 갖는 가장 작은 단위로 쪼개기
 
-</br>
 
-#### Sectioning Elements
+### Sectioning Elements
 
-<img src="./img/section.png"  width="400" height="450">
-<br/>
+<img src="./img/section.png"  width="400">
+
 
 - **section** : 논리적인 완결된 집합체에 사용, 주제별로 그룹화된 콘텐츠에 주로 사용한다.
 - **nav** : 문서 간에 이동을 할 수 있는 navigation의 역할을 할 때 사용한다. ex. 메뉴
@@ -83,24 +69,17 @@ draft: false
 - **aside** : 본문의 내용과 직접적인 연관이 없는 분리된 내용을 마크업하 때 사용한다. ex. 사이드바, 배너, 작은 위젯 등 
 > ❗️ **section, nav, article, aside** 태그는 안에 **반드시** heading 태그를 사용해야 한다.
 
-<br/>
 
-- **header** : 어떤 section의 상단부, 도입부라는 의미를 전달할 때 사용한다. <br/>
+
+- **header** : 어떤 section의 상단부, 도입부라는 의미를 전달할 때 사용한다. 
 - **main** : 본문에 있어서 가장 핵심이 되는 부분을 묶어줄 때 사용한다. **_하나의 html문서에는 단 하나의 main만 사용 가능_** 
 - **footer** : 어떤 section 하단부라는 의미를 전달할 때 사용하고, 웹페이지의 마지막 부분에 나열하는 정보를 마크업할 때 사용한다.
 >❗️ **header, main, footer** 태그는 heading 태그를 반드시 사용할 필요없다.
 
 </br>
-</br>
-
----
-
-</br>
-</br>
 
 # Document
 
-</br>
 
 **Document Type Declaration**
 
@@ -110,7 +89,6 @@ draft: false
 
 ⇒ 이 문서가 HTML5로 작성된 문서라는 것을 브라우저에게 알려준다.
 
-</br>
 
 - **head** : meta 데이터를 사용하는 것들을 담는다. => 사용자가 보지 못하는 부분
 - **body** : 웹 문서에서 보여주는 모든 것을 담는다. => 사용자가 볼 수 있는 부분 
@@ -128,7 +106,6 @@ draft: false
   - description : 설명
   - content : 메타데이터의 값
   
-</br>
 
 > VSCODE의 emmet 기능으로 **!** 를 입력하고 엔터만 쳐도 아래 코드(CSS와 JavaScript를 적용하는 코드인 `<link rel="stylesheet" href="sytles.css">`와 `<script src="./main.js"></script>` 제외)를 작성할 수 있다.
 
@@ -147,12 +124,6 @@ draft: false
 ```
 
 </br>
-</br>
-
----
-
-</br>
-</br>
 
 # Tag
 
@@ -163,42 +134,36 @@ draft: false
 [더 다양한 태그를 알고 싶다면!](https://developer.mozilla.org/ko/docs/Web/HTML/Element)
 
 
-</br>
-</br>
 
 ## Headings &amp; Paragraph
 
 
-#### Heading 제목
+### Heading 제목
 
 : 제목을 나타내는 태그로 h1, h2, h3, h4, h5, h6가 있다. h1이 가장 중요한 제목일 때 사용하고, 반대로 h6가 가장 낮은 중요도를 갖는다. 
 
 `<h1> 제목 </h1>` 
 
-#### Paragraph 문단
+### Paragraph 문단
 
 : 하나의 문단을 나타낸다. 
 
 `<p> blabla </p>` 
 
-</br>
-</br>
 
 ## Emphasis
 
 강조할 때 사용하는 태그로 em과 strong이 있다. 보통 브라우저는 굵은 글씨로 표현한다. 
 
-#### em
+### em
 
 `<em> 강조 </em>` 
 
-#### strong
+### strong
 
 `<strong> 강조 </strong>` 
 
 
-</br>
-</br>
 
 ## Anchor
 
@@ -206,7 +171,6 @@ draft: false
 
 `<a href="주소" 링크 </a>`
 
-</br>
 
 > **href 주소값 표기 방법**
 > 1.  웹 URL
@@ -220,13 +184,11 @@ draft: false
 > 4.  전화 걸기
 > `<a href="tel:전화번호"> </a>`
 > 
-> </br>
+>
 >
 > 💡 페이지를 이동할 때 원래 페이지가 사라지고 이동하는 것이 아닌 **새 창으로** 열고 싶을 때
 > `<a href="주소" target="_blank"> </a>`
 
-</br>
-</br>
 
 ## Image
 
@@ -246,8 +208,6 @@ draft: false
 
   그리고 img가 진짜 중요하지 않다면 굳이 html에서 작성할 필요 없다. (CSS로 작성 가능하기 때문에)
 
-</br>
-</br>
 
 ## Lists
 
@@ -261,8 +221,6 @@ draft: false
 
 > 만약 list가 링크로 연결한다면 ul, ol 태그 안에 li 태그가 있고 그 안에 a 링크 태그를 넣어야 한다. a링크 태그 안에 li 태그를 넣으면 ul과 ol의 자식요소가 li가 아닌게 생기므로 문법적으로 맞지 않다.
 
-</br>
-</br>
 
 ## Description List
 
@@ -292,8 +250,6 @@ dl의 자식요소는 dt, dd, div만 가능하다.
 
 > ❗️ dt와 dd는 함께 사용해야 한다. 또한 반드시 dl의 자식요로만 존재해야 한다. (단독으로 사용 불가능)
 
-</br>
-</br>
 
 ## Quotations
 
@@ -310,8 +266,6 @@ dl의 자식요소는 dt, dd, div만 가능하다.
 
   : p 태그 안에서 인용한 문장을 q태그로 감싸주면 나중에 "" 따옴표 처리가 되어서 나타난다.
 
-</br>
-</br>
 
 ## Div & Span
 
@@ -319,8 +273,6 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
 
 💡 div 태그와 span 태그는 둘 다 거의 똑같지만, 텍스트를 넣을 때는 주로 span 태그를 사용한다.
 
-</br>
-</br>
 
 ## Form
 
@@ -334,15 +286,13 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
   - GET : POST를 쓰지 않는 경우에 사용한다.
   - POST : 중요한 정보나 정보의 양이 많을 때 사용한다.
 
-</br>
 
 ### Input
 
 기본적인 입력창
 
-</br>
 
-#### Input type
+**Input type**
 
 - email
 
@@ -355,7 +305,7 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
 
   : 숫자만 입력 가능하다.
   - min : 숫자의 최소값을 입력 (글자 수와는 상관 없음)
-  - max : 숫자의 최대값을 입력 </br>
+  - max : 숫자의 최대값을 입력
 	```html
 	<form action="" method="GET">
 	  <input type="number" min="1" max="100" placeholder="나이를 입력하세요"/>
@@ -404,9 +354,8 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
     </button>
   </form>
   ```
-</br>
 
-#### Input Attribute
+**Input Attribute**
 
 ```html
 <form action="" method="GET">
@@ -423,7 +372,6 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
 
 > 💡 value는 기본적으로 입력되어 있는 값으로 복사 가능하지만, placeholder는 input에 관한 정보이므로 복사할 수 없다.
 
-</br>
 
 ### Label
 
@@ -436,7 +384,6 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
 <input type="text" id="user-name"/>
 ```
 
-</br>
 
 ### Select &amp; Option
 
@@ -461,7 +408,6 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
 </form>
 ```
 
-</br>
 
 ### Textarea
 
@@ -473,7 +419,6 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
 
 > `input type="text"/` ⇒ 보통 한 줄 정도의 텍스트를 받을 때 사용하고, textarea는 여러 줄의 텍스트를 받을 때 사용한다.
 
-</br>
 
 ### Buttons
 
@@ -484,8 +429,6 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
 
 > Button과 `input type="submit"`은 기능적 차이는 없으나, button이 더 풍부한 렌더링 옵션을 제공한다.
 
-</br>
-</br>
 
 ## Table
 데이터를 담은 표를 만들 때 사용하는 태그로 주로 같은 구조가 병렬적으로 반복될 때 사용한다.
@@ -501,7 +444,6 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
 
   : 셀을 만드는 역할로 표의 셀 안에 들어가는 데이터를 적으며, 데이터가 없는 경우에는 td의 값을 빈칸으로 비워둔다.
   
-</br>
 
 - __thead__ 
   
@@ -515,7 +457,6 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
 
 > 보통 table태그의 thead는 한 번 만들고, tbody는 여러 개 만들 수 있어 잘 만들어두면 계속 복사해서 사용할 수 있다.
 
-</br>
 
 - __td rowspan="숫자"__
 
@@ -561,12 +502,9 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
     </tr>
 ```
 
-</br>
-</br>
 
 ## Media
 
-</br>
 
 ### Audio
 오디오 파일을 첨부할 때 사용하는 태그
@@ -579,7 +517,6 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
 	<source src="" type="">
 </audio>
 ```
-</br>
 
 - Audio Attributes
   - controls : 사용자가 오디오를 조절할 수 있도록 한다.
@@ -600,7 +537,6 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
     </audio>
     ```
 
-</br>
 
 ### Video
 비디오 파일을 첨부할 때 사용하는 태그
@@ -617,7 +553,6 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
 </video>
 ```
 
-</br>
 
 - Video Attributes
   - controls : 사용자가 비디오를 조절할 수 있도록 한다.
@@ -636,7 +571,6 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
     </video>
     ```
 
-</br>
 
 ### iframe
 하나의 또 다른 HTML 문서를 현 페이지에 embed하는 것으로 보통 youtube, vimeo 등 외부 콘텐츠를 embed하여 공유할 때 자주 사용한다. ifrmae의 값은 보통 영상에서 제공하기 때문에 직접 작성할 일은 거의 없다.
@@ -645,8 +579,6 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
 <iframe src="embed하고 싶은 페이지의 주소"></iframe>
 ```
 
-</br>
-</br>
 
 ## Address
 (물리적) 주소, url, email, 전화번호, SNS 등이 사용 가능하다.
@@ -662,8 +594,6 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
 </address>
 ```
 
-</br>
-</br>
 
 ## Abbreviation
 약자, 약어를 사용자가 모를 경우에 따로 감싸주어서 알려주는 태그 (p태그 등 다른 태그의 내용 안에서도 사용 가능하다.)
@@ -672,8 +602,6 @@ Div와 Span은 레이아웃에 아무런 영향을 주지 않는 컨테이너의
 <abbr title="Attention Deficit Hyperactivity Disorder">ADHD</abbr>
 ```
 
-</br>
-</br>
 
 ## Code &amp; Prefomatted text
 html 문서 상에서 코드를 작성하고 싶을 때 사용한다.
@@ -687,18 +615,14 @@ html 문서 상에서 코드를 작성하고 싶을 때 사용한다.
     ```
 - **code** : 코드를 작성하고 싶을 때 사용하는데, 보통 pre 태그 안에 code 태그를 작성해서 사용한다. (특히 여러 줄의 태그를 작성하고 싶을 때 pre코드를 같이 사용하고, 한 줄의 짧은 코드는 굳이 pre태그를 같이 사용할 필요없다.)
 
-</br>
-</br>
 
 ## br
-줄바꿈 태그로 이러한 태그를 닫힌 태그라 한다. (`<br>`이나 `<br/>` 둘 다 사용 가능하지만 하나만 사용해야 된다.)
+줄바꿈 태그로 이러한 태그를 닫힌 태그라 한다. (`<br>`이나 `` 둘 다 사용 가능하지만 하나만 사용해야 된다.)
 
 ```html
-<br/>
+
 ```
 
-</br>
-</br>
 
 ## hr
 구분선 태그 : 문단과 문단을 나눌 때 수평선을 그려준다.
@@ -707,8 +631,6 @@ html 문서 상에서 코드를 작성하고 싶을 때 사용한다.
 <hr/>
 ```
 
-</br>
-</br>
 
 ## blockquote
 인용구문을 넣을 때 쓰는 태그
@@ -718,16 +640,9 @@ html 문서 상에서 코드를 작성하고 싶을 때 사용한다.
 ```
 
 </br>
-</br>
-
----
-
-</br>
-</br>
 
 # More..
 
-</br>
 
 ## WAI-ARIA
 인터넷의 접근성을 높일 수 있는 API로 시각장애인 등 웹 페이지를 보는 것이 아닌 _듣는 사용자가 스크린리더를 이용할 경우_ 이미지의 명확한 이유를 알려주기 위해서 사용한다.
