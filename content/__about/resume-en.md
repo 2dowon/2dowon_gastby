@@ -6,11 +6,8 @@ lang: "en"
 
 # 이도원 (2dowon)
 
-<div align="right"><sub><i>Last updated: 2021.01.14</i></sub></div>
+<div align="right"><sub><i>Last updated: 2021.03.09</i></sub></div>
 
-## 안녕하세요👋 
-
-<br />
 
 **저는 `_______` 것을 좋아합니다.**
 
@@ -19,15 +16,16 @@ lang: "en"
 3. 효율적으로 움직이는
 4. 다른 사람들과 서로 알고 있는 것을 공유하는
 
-<br />
+</br>
 
 **저는 `_______` 을 배우며 사용하고 있습니다.**
 
-1. Python 3.9
-2. Django 3.1.5
-3. MySQL 8.0.22
-4. HTML / CSS
-5. GitHub
+1. HTML / CSS, SCSS
+2. JavaScript (ES6)
+3. React
+4. Python (3.*)
+5. Flask
+6. GitHub
 
 |             |                               |
 | :---------: | ----------------------------- |
