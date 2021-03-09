@@ -21,6 +21,8 @@ print(counter_dict)
 # {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1}
 ```
 
+</br>
+
 # collections.Counter
 
 하지만 위 방법 외에도 Python의 collections 모듈의 counter를 이용하면 더 쉽게 데이터의 개수를 셀 수 있다.
@@ -34,7 +36,7 @@ Counter('hello world')
 # Counter({'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1})
 ```
 
-Counter는 dictionary를 확장하고 있기 때문에, 사전에서 제공하는 API를 그대로 다 시용할 수 있다. 따라서 아래 예시처럼 dictionary의 key를 이용한 방법으로 가장 많이 등장하는 아이템을 찾을 수 있다.
+Counter는 dictionary를 확장하고 있기 때문에, 사전에서 제공하는 API를 그대로 다 사용할 수 있다. 따라서 아래 예시처럼 dictionary의 key를 이용한 방법으로 가장 많이 등장하는 아이템을 찾을 수 있다.
 
 > hello world 문자열에서 가장 많이 등장하는 알파벳 찾기
 
@@ -55,7 +57,9 @@ print(max_letter, max_count) # l 3
 
 ## counter.most_common()
 
-Counter에는 가장 많이 등장하는 아이템을 쉽게 찾을 수 있도록 `most_common()` 메서드가 있다. `most_common()` 메서드는 데이터의 개수가 많은 순서로 정렬해 리스트 안의 튜플 형태로 반환해준다. (dictionary로 정렬한다면 value값을 기준으로 내림차순 정렬을 한 것과 같은 역할을 해준다.)
+Counter에는 가장 많이 등장하는 아이템을 쉽게 찾을 수 있도록 `most_common()` 메서드가 있다. `most_common()` 메서드는 데이터의 개수가 많은 순서로 정렬해 리스트 안의 튜플 형태로 반환해준다. 
+
+(dictionary로 정렬한다면 value값을 기준으로 내림차순 정렬을 한 것과 같은 역할을 해준다.)
 
 ```python
 from collections import Counter
