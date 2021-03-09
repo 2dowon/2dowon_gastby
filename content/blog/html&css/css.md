@@ -6,67 +6,57 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-### CSS 공부한 내용을 나중에 찾아보기 쉽게 정리했습니다. CSS 개념 정리는 이 포스트에 계속 업로드하고 있습니다.
-
-</br>
-</br>
-
----
-
 # CSS
 
-- [CSS](#CSS)
-- [Selectors](#Selectors)
-    - [Type, Class & ID Selector](#Type,-Class-&-ID-Selector)
-        - [Type Selector](#Type-Selector)
-        - [Class Selector](#Class-Selector)
-        - [ID Selector](#ID-Selector)
-    - [Child, Descendant & Sibling Combinators](#Child,-Descendant-&-Sibling-Combinators)
-        - [Child](#Child)
-        - [Descendant](#Descendant)
-        - [Sibling Combinators](#Sibling-Combinators)
-    - [Structural Pseudo-classes](#Structural-Pseudo-classes)
-        - [element:first-child](#element:first-child)
-        - [element:last-child](#element:last-child)
-        - [element:nth-child(n)](#element:nth-child(n))
-    - [Structural Pseudo-classes](#Structural-Pseudo-classes)
-        - [User Action Pseudo-classes](#User-Action-Pseudo-classes)
-    - [CSS 선택자 우선순위](#CSS-선택자-우선순위)
-- [Box](#Box)
-    - [Box Model](#Box-Model)
-    - [Box Sizing](#Box-Sizing)
-    - [Box](#Box)
-        - [Block](#Block)
-        - [Inline](#Inline)
-        - [Inline Block](#Inline-Block)
-        - [Flex](#Flex)
-- [Float](#Float)
-- [Position](#Position)
-    - [static](#static)
-    - [relative](#relative)
-    - [absolute](#absolute)
-    - [fixed](fixed)
-    - [sticky](sticky)
-- [Flex Box](#Flex-Box)
-- [Media Query](#[Media-Query)
-- [Typography](#Typography)
-- [Background](#Background)
-- [Transtion](#Transtion)
-- [Animation](#Animation)
-- [etc](#etc)
+- CSS
+- Selectors
+    - Type, Class & ID Selector
+        - Type Selector
+        - Class Selector
+        - ID Selector
+    - Child, Descendant & Sibling Combinators
+        - Child
+        - Descendant
+        - Sibling Combinators
+    - Structural Pseudo-classes
+        - element:first-child
+        - element:last-child
+        - element:nth-child(n)
+    - Structural Pseudo-classes
+        - User Action Pseudo-classes
+    - CSS 선택자 우선순위
+- Box
+    - Box Model
+    - Box Sizing
+    - Box
+        - Block
+        - Inline
+        - Inline Block
+        - Flex
+- Float
+- Position
+    - static
+    - relative
+    - absolute
+    - fixed
+    - sticky
+- Flex Box
+- Media Query
+- Typography
+- Background
+- Transtion
+- Animation
+- etc
 
-</br>
 
 ---
 
-</br>
 
 # CSS란
 ## CSS
 
 Cascading Style Sheet
 
-</br>
 
 ## Syntax
 
@@ -86,8 +76,6 @@ selector {
     2. value 속성에 따른 값
     3. ; 세미콜론 ⇒ , 콤마의 역할
 
-</br>
-</br>
 
 ## CSS 사용방법
 
@@ -112,7 +100,7 @@ selector {
     		</style>
     		...
     ```
-    > **HTML에 Style을 적용하면 안되는 이유** </br> : HTML에 웹에 관한 정보 외에 너무 많은 정보가 포함되고, 스타일을 유지보수, 수정하는 것도 어려움
+    > **HTML에 Style을 적용하면 안되는 이유** : HTML에 웹에 관한 정보 외에 너무 많은 정보가 포함되고, 스타일을 유지보수, 수정하는 것도 어려움
 
 
 3. inline 스타일로 작성
@@ -125,12 +113,6 @@ selector {
     </p>
     ```
 
-</br>
-</br>
-
----
-
-</br>
 </br>
 
 # Selectors
@@ -152,7 +134,6 @@ h1 {
 	color : #0066ff;
 }
 ```
-</br>
 
 ### Class Selector
 
@@ -185,7 +166,6 @@ h1 {
 	backgroun-color: red;
 }
 ```
-</br>
 
 ### ID Selector
 
@@ -201,7 +181,6 @@ ID는 단 하나만 존재할 수 있음 ⇒ 중복 사용 불가능
 }
 ```
 
-</br>
 
 
 ## 자식, 자손, 형제 선택자 (Child, Descendant & Sibling Combinators)
@@ -223,7 +202,6 @@ ID는 단 하나만 존재할 수 있음 ⇒ 중복 사용 불가능
 - li 안에 있는 h1과 p는 li의 자식이고, h1과 p는  서로 형제이다
 - 자손 안에는 모든 자식이 해당 되기에 모든 자식은 자손이다.
 
-</br>
 
 ### Child 자식 선택자
 
@@ -238,7 +216,6 @@ section > h1 {
 	color: red;
 }
 ```
-</br>
 
 ### Descendant 자손 선택자
 
@@ -253,7 +230,6 @@ section h1 {
 	color: blue;
 }
 ```
-</br>
 
 ### Sibling Combinators 형제 선택자
 
@@ -297,7 +273,6 @@ section h1 {
     }
     ```
 
-</br>
 
 
 ## 구조적 가상 클래스 선택자 (Structural Pseudo-classes)
@@ -317,7 +292,6 @@ section h1 {
 	</ol>
 </secton>
 ```
-</br>
 
 ### element:first-child
 
@@ -330,7 +304,6 @@ section h1 {
     	color: #0066ff;
     ]
     ```
-</br>
 
 ### element:last-child
 
@@ -343,7 +316,6 @@ section h1 {
     	color: #ffc82c;
     ]
     ```
-</br>
 
 ### element:nth-child(n)
 
@@ -360,8 +332,6 @@ section h1 {
 - 짝수 : element:nth-child(2n)
 - 홀수 : element:nth-child(2n-1)
 
-</br>
-</br>
 
 ## 구조적 가상 클래스 선택자 (Structural Pseudo-classes)
 
@@ -403,8 +373,6 @@ section h1 {
 
 > (+) focus와 active를 같은 요소에 적용할 수 있는데, 그 경우 유저가 클릭한 순간에는 active의 효과가 적용되고, > 그 이후부터는 focus의 효과가 적용된다.
 
-</br>
-</br>
 
 ## CSS 선택자 우선순위
 ✅ 기본적으로 CSS는 나중에 선언된 것이 기존에 선언된 것을 덮어 씀
@@ -415,7 +383,6 @@ section h1 {
 
 ⇒ ID, Class, Pseudo-class, Type의 개수가 같다면 총 개수로 비교
 
-</br>
 
 
 ### CSS의 규칙과 상관없이 우선순위가 되는 경우 😈
@@ -436,13 +403,9 @@ section h1 {
 
  > ⇒ 기존 규칙을 깨는 아이들이기 때문에 가급적이면 사용 자제하기
 
-</br>
-</br>
-
----
 
 </br>
-</br>
+
 
 # Box
 ## Box Model
@@ -508,7 +471,6 @@ css의 box-sizing의 기본값은 content-box이지만 이를 border-box로 수�
 
 > ✅  Block : 면(영역) / Inline : 선(흐름)
 
-</br>
 
 ### Block
 
@@ -525,7 +487,6 @@ css의 box-sizing의 기본값은 content-box이지만 이를 border-box로 수�
 
 > 💡 css를 통해 가운데 정렬을 할 때 margin: 0 auto; ⇒ 0 auto : 상하 margin은 0이고,  좌우 margin은 사이좋게 나눠 가진다 라는 뜻
 
-</br>
 
 ### Inline
 
@@ -539,7 +500,6 @@ css의 box-sizing의 기본값은 content-box이지만 이를 border-box로 수�
 
 ⇒ Inline의 흐름을 박살내는 속성이기 때문
 
-</br>
 
 ### Inline Block
 
@@ -547,23 +507,17 @@ Inline에 Block의 능력을 갖고 있음
 
 ⇒ Inline처럼 기본적으로는 흐르지만, Block처럼 영역도 잡을 수 있음
 
-</br>
 
 ### Flex
 
 [Flex Box 참고](#Flex-Box)
-</br>
-</br>
 
----
-</br>
 </br>
 
 # Float
 
 Float는 Block 요소들을 가로 배치하기 위해서 사용
 
-</br>
 
 ## Float를 사용하면 무슨 일이?
 
@@ -588,7 +542,6 @@ Float는 Block 요소들을 가로 배치하기 위해서 사용
 
 4. Block 요소들은 float된 요소들을 없는 요소 취급하지만, inline 요소들은 float를 인식한다
 
----
 
 ### 이를 고치기 위해
 
@@ -633,26 +586,20 @@ Float는 Block 요소들을 가로 배치하기 위해서 사용
 
     💡 clear를 적용하기 위해 필요한 요소마다  `::after` 를 적용해 가상 요소를 만들기 귀찮기 때문에 범용으로 쓸 수 있는 `.  clearfix::after {content: ""; display: block; clear: both;}` 를 만들고 float를 적용할 때마다  해당하는 부모의 HTML 태그에 clearfix 클래스를 추가하기
 
-</br>
-</br>
-
----
 
 </br>
-</br>
+
 
 # Postion
 ## Position
 
 `position: static | relative | absolute | fixed | sticky;`
 
-</br>
 
 ### static
 
 모든  요소에서 position의 기본 값
 
-</br>
 
 ### relative
 
@@ -670,7 +617,6 @@ Float는 Block 요소들을 가로 배치하기 위해서 사용
 
 ⇒ top이면 위를 기준으로 20px을 움직이기에 밑으로 움직이는 것처럼 보이고, right은 오른쪽을 기준으로 움직이기에 box가 왼쪽으로 움직인 것처럼 보인다 
 
-</br>
 
 ### absolute
 
@@ -703,7 +649,6 @@ Float는 Block 요소들을 가로 배치하기 위해서 사용
 
     그래서 보통 기준점으로 정하고 싶은 조상에게 `position: relative;` 를 적용함 (relative는 영향을 미치지 않기 때문)
 
-</br>
 
 ### fixed
 
@@ -713,7 +658,6 @@ Float는 Block 요소들을 가로 배치하기 위해서 사용
 
 ⇒ 스크롤을 해도 viewport의 위치에 맞게 항상 같은 위치에 고정됨
 
-</br>
 
 ### sticky
 
@@ -729,13 +673,9 @@ Float는 Block 요소들을 가로 배치하기 위해서 사용
 
     z-index 숫자가 높을수록 더 위에 있다는 뜻 ⇒ z-index 숫자가 낮은 요소들을 가릴 수 있다는 의미
 
-</br>
-</br>
-
----
 
 </br>
-</br>
+
 
 # Flex Box
 ## Flex Box
@@ -777,7 +717,6 @@ Float는 Block 요소들을 가로 배치하기 위해서 사용
 >- `felx-direction:column-reverse;`  
 >    main axis = 아래에서 위로 흐르는 세로선(↑) cross axis = 왼쪽에서 오른쪽으로 흐르는 가로선(→)
 
-</br>
 
 ### 3. flex-wrap
 
@@ -786,7 +725,6 @@ Float는 Block 요소들을 가로 배치하기 위해서 사용
 - `flex-wrap: nowrap;` 감싸지 않고 자식의 사이즈를 줄여서라도 한 줄로 정렬
 - `flex-wrap: wrap;` 한 줄에 모두 정렬하기에 공간이 넉넉하지 않으면 여러 줄에 정렬
 
-</br>
 
 ### 4. justify-content, align-items | align-contnet
 
@@ -825,18 +763,13 @@ Float는 Block 요소들을 가로 배치하기 위해서 사용
 
     order의 숫자가 낮을수록 먼저 온다
 
-</br>
-</br>
-
----
 
 </br>
-</br>
+
 
 # Media Query
 - 반응형 웹 규격 참고 ⇒ [Overview](https://getbootstrap.com/docs/4.5/layout/overview/#containers)
 
-</br>
 
 ## Media Query
 
@@ -844,7 +777,6 @@ Responsive Web 반응형 웹을 만들기 위해
 
 ⇒ HTML에서 viewport meta와 CSS에서 media query가 반드시 선언되어야 한다
 
-</br>
 
 ### viewport meta
 
@@ -876,23 +808,17 @@ Responsive Web 반응형 웹을 만들기 위해
 >
 >    width : 100vw ⇒ viewport의 가로 길이 만큼 차지
 
-</br>
-</br>
-
----
 
 </br>
-</br>
+
 
 # Typography
-</br>
 
 
 ## Typography
 
 텍스트를 예쁘게 디자인 하는 것
 
-</br>
 
 ### font-size
 
@@ -931,7 +857,6 @@ Responsive Web 반응형 웹을 만들기 위해
     	font-size: 3rem; /* 60px */
     }
     ```
-</br>
 
 ### line-height
 
@@ -952,7 +877,6 @@ line-height 크기와 상관없이 사용했을 때 text는 무조건 line-heigh
 
 ❗️ font-size에 비례해서 line-height를 적을 때는 em을 생략하기 (px, rem은 반드시 적어야 한다)
 
-</br>
 
 
 ### letter-spacing
@@ -961,7 +885,6 @@ line-height 크기와 상관없이 사용했을 때 text는 무조건 line-heigh
 
 letter-spacing은 px과 em을 사용한다 (em을 생략하면 안된다! 무조건 적어야 함)
 
-</br>
 
 ### font-family
 
@@ -977,7 +900,6 @@ letter-spacing은 px과 em을 사용한다 (em을 생략하면 안된다! 무조
 }
 ```
 
-</br>
 
 ### font-weight
 
@@ -987,7 +909,6 @@ letter-spacing은 px과 em을 사용한다 (em을 생략하면 안된다! 무조
 
 ![box1](./css_img/font.png)
 
-</br>
 
 ### color
 
@@ -1007,7 +928,6 @@ letter-spacing은 px과 em을 사용한다 (em을 생략하면 안된다! 무조
 
     마지막은 alpha 값으로 투명도를 표현함 (0이면 투명, 1이면 불투명)
 
-</br>
 
 ### text-align
 
@@ -1017,7 +937,6 @@ text를 정렬할 때 사용
 - right : 오른쪽 정렬
 - center : 가운데 정렬
 
-</br>
 
 ### text-indent
 
@@ -1025,7 +944,6 @@ text를 정렬할 때 사용
 
 `text-indent: 100px;` 100px만큼 들여쓰기함
 
-</br>
 
 ### text-transform
 
@@ -1036,7 +954,6 @@ text를 정렬할 때 사용
 - uppercase : 모든 글자가 대문자가 됨
 - lowercase : 모든 글자가 소문자가 됨
 
-</br>
 
 ### text-decoration
 
@@ -1049,7 +966,6 @@ text를 정렬할 때 사용
 
 ✅ a태그의 기본값이 underline이기 때문에 `text-decoration: none;` 으로 없앨 때 사용
 
-</br>
 
 ### font-style
 
@@ -1060,7 +976,6 @@ text를 정렬할 때 사용
 ✅ em태그의 기본값이 italic이기 때문에 `font-style: none;` 으로 없앨 때 사용
 
 
-</br>
 
 ## Webfont ❗️
 
@@ -1082,16 +997,11 @@ text를 정렬할 때 사용
     	font-family: 'Roboto', sans-serif;
     }
     ```
-</br>
-</br>
-
----
 
 </br>
-</br>
+
 
 # Background
-</br>
 
 ## Background
 
@@ -1109,7 +1019,6 @@ text를 정렬할 때 사용
 	background-position: center center;
 }
 ```
-</br>
 
 ### background-color
 
@@ -1119,7 +1028,6 @@ hex, rgb, rgba로 표현할 수 있음
 
 `background-color: #0066ff;`
 
-</br>
 
 ### background-image
 
@@ -1135,7 +1043,6 @@ hex, rgb, rgba로 표현할 수 있음
 
     `background-image: url("이미지 주소");`
 
-</br>
 
 ### background-repeat
 
@@ -1144,7 +1051,6 @@ hex, rgb, rgba로 표현할 수 있음
 - repeat : 기본값
 - no-repeat : 이미지의 반복을 원하지 않을 경우
 
-</br>
 
 ### background-size
 
@@ -1156,7 +1062,6 @@ hex, rgb, rgba로 표현할 수 있음
 
     ✅ `background-size: 100% auto` ⇒ 가로는 꽉 차고, 세로는 자동으로
 
-</br>
 
 ### background-position
 
@@ -1166,16 +1071,10 @@ x(x축)와 y(y축) 값에는 center, top, bottom, px, % 등 다양하게 사용 
 
 ✅ 보통은 가운데 정렬을 많이 하기 때문에 `background-position: center center;` 를 많이 사용
 
-</br>
-</br>
 
----
-
-</br>
 </br>
 
 # Transtion
-</br>
 
 ## Transition
 
@@ -1185,7 +1084,6 @@ x(x축)와 y(y축) 값에는 center, top, bottom, px, % 등 다양하게 사용 
 transition: property, duration, (timing-function), (delay);
 ```
 
-</br>
 
 ### property
 
@@ -1193,7 +1091,6 @@ transition: property, duration, (timing-function), (delay);
 
 모든 property에 transition을 적용하고 싶으면 `all` 
 
-</br>
 
 ### duration
 
@@ -1201,7 +1098,6 @@ transition: property, duration, (timing-function), (delay);
 
 **1,000ms === 1s**
 
-</br>
 
 ### [timing-function]
 
@@ -1214,7 +1110,6 @@ transition: property, duration, (timing-function), (delay);
 
     [cubic-bezier.com](https://cubic-bezier.com/#.17,.67,.83,.67)
 
-</br>
 
 ### [delay]
 
@@ -1229,12 +1124,6 @@ transition: property, duration, (timing-function), (delay);
 ```
 
 
-</br>
-</br>
-
----
-
-</br>
 </br>
 
 # Animation
@@ -1263,7 +1152,6 @@ transition: property, duration, (timing-function), (delay);
 }
 ```
 
-</br>
 
 ### @keyframes name
 
@@ -1301,7 +1189,6 @@ transition: property, duration, (timing-function), (delay);
 }
 ```
 
-</br>
 
 ### duration
 
@@ -1311,7 +1198,6 @@ transition: property, duration, (timing-function), (delay);
 
 `animation-duration: 2000ms;` ⇒ 애니메이션을 2초 동안 진행함
 
-</br>
 
 ### timing-function
 
@@ -1323,13 +1209,11 @@ transition: property, duration, (timing-function), (delay);
 - [cubic-bezier](https://cubic-bezier.com/#.17,.67,.83,.67) : 변화의 가속도를 직접 제어하고 싶을 때
 
 
-</br>
 
 ### delay
 
 `animation-delay: 1000ms;` ⇒ 1초 후에 애니메이션이 일어날 수 있도록
 
-</br>
 
 ### iteration-count
 
@@ -1340,7 +1224,6 @@ transition: property, duration, (timing-function), (delay);
 - 정수를 적거나
 - infinite : 무한대로 반복하고 싶을때
 
-</br>
 
 ### direction
 
@@ -1353,16 +1236,9 @@ transition: property, duration, (timing-function), (delay);
 
 
 </br>
-</br>
-
----
-
-</br>
-</br>
 
 # etc
 
-</br>
 
 ## Box Shadow
 
@@ -1376,7 +1252,6 @@ transition: property, duration, (timing-function), (delay);
 - **spread** = 그림자 사이즈
 - **color** = 색상
 
-</br>
 
 >  Box Shadow를 만들 수 있는 사이트
 >
@@ -1384,7 +1259,6 @@ transition: property, duration, (timing-function), (delay);
 >    
 >    - [Neumorphism/Soft UI CSS shadow generator](https://neumorphism.io/#55b9f3)
 
-</br>
 
 ## Opacity
 
@@ -1392,7 +1266,6 @@ transition: property, duration, (timing-function), (delay);
 
 `opacity: 0.5;`
 
-</br>
 
 ## Overflow
 
@@ -1403,21 +1276,12 @@ transition: property, duration, (timing-function), (delay);
 - scroll : 넘쳐 흐르면 스크롤바가 만들어짐
 - hidden : 넘쳐 흐르는 건 보여주지 말아라
 
----
-title: 'Category Test3'
-date: 2020-07-02 16:21:13
-category: 'HTML&CSS'
-draft: false
----
-
-</br>
 ✅ overflow-x와 overflow-y로 x축과 y축을 따로 제어할 수 있음
 
 `overflow-x: scroll; overflow-y: hidden;` 
 
 ⇒ 가로로는 스크롤해서 볼 수 있지만, 세로로 잘린 내용은 볼 수 없음
 
-</br>
 
 ## Transform
 
@@ -1434,7 +1298,6 @@ transform은 요소의 위치, 크기, 각도 등을 바꾸더라도 요소와 �
 
 - rotate(Ndeg) : 어떤 요소의 각도를 회전할 때 사용 (90deg = 1/4바퀴, 360deg 한바퀴 회전)
 
-</br>
 
 ## Visibility
 
