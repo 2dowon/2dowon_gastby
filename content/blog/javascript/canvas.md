@@ -33,6 +33,8 @@ canvas.width = document.body.clientWidth;
 canvas.height = document.body.clientHeight;
 ```
 
+</br>
+
 # canvas로 도형 그리기
 
 canvas로 도형을 그릴 때, 도형은 아래 그림처럼 x, y에서 시작되어서 그려진다.
@@ -41,23 +43,23 @@ canvas로 도형을 그릴 때, 도형은 아래 그림처럼 x, y에서 시작�
 
 ## 사각형 그리기
 
-- `[fillRect(x, y, width, height)](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillRect)` : 색칠된 사각형을 그려준다
-- `[strokeRect(x, y, width, height)](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/strokeRect)` : 사각형의 외곽 선을 그려준다
-- `[clearRect(x, y, width, height)](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/clearRect)` : 사각형의 크기만큼 투명하게 만들어준다
+- [`fillRect(x, y, width, height)`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillRect) : 색칠된 사각형을 그려준다
+- [`strokeRect(x, y, width, height)`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/strokeRect) : 사각형의 외곽 선을 그려준다
+- [`clearRect(x, y, width, height)`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/clearRect) : 사각형의 크기만큼 투명하게 만들어준다
 
 ## 선 그리기
 
 선을 그릴 때는 먼저 beginPath로 선을 시작한 후, Path methods를 이용해 선을 그린다. 그 후 해당 선에 외곽선만 표시할 것인지, 아니면 선의 영역만큼 색을 채울 것인지 stroke 또는 fill을 이용해 결정한다. 선의 색상은 fillStyle을 이용해 설정할 수 있다.
 
-- `[beginPath()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/beginPath)` : 새로운 선을 만든다
+- [`beginPath()`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/beginPath) : 새로운 선을 만든다
 - [Path methods](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D#paths) : 선을 그리는 다양한 메서드 ex. moveTo, lineTo 등
-- `[closePath()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/closePath)` : 선에서 다른 선을 추가할 때 사용
-- `[stroke()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/stroke)` : 선의 외곽선을 그릴 때 사용
-- `[fill()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fill)` : 선의 영역만큼 색을 칠할 때 사용
+- [`closePath()`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/closePath) : 선에서 다른 선을 추가할 때 사용
+- [`stroke()`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/stroke) : 선의 외곽선을 그릴 때 사용
+- [`fill()`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fill) : 선의 영역만큼 색을 칠할 때 사용
 
 ## 원 그리기
 
-원을 그리기 위해서는 `[arc()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc)` 메서드를 이용해야 한다. 원은 다른 도형과 다르게 원의 중심이 x, y가 된다.
+원을 그리기 위해서는 [`arc()`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc) 메서드를 이용해야 한다. 원은 다른 도형과 다르게 원의 중심이 x, y가 된다.
 
 ### arc()
 
@@ -82,6 +84,7 @@ ctx.stroke();
 ```
 
 > 원은 0에서 시작해 2 _ Math.PI에서 끝난다. 따라서 12시 방향부터 그려지는 원을 그리고 싶다면 시작점을 1.5 _ Math.PI 로 설정해야 한다
+
 > (그림 출처 : [https://webisfree.com/2018-06-07/[html5]-캔버스(canvas)에-원-그리기](<https://webisfree.com/2018-06-07/%5Bhtml5%5D-%EC%BA%94%EB%B2%84%EC%8A%A4(canvas)%EC%97%90-%EC%9B%90-%EA%B7%B8%EB%A6%AC%EA%B8%B0>))
 
 ![https://webisfree.com/static/uploads/2018/2066_arc_angle.jpg](https://webisfree.com/static/uploads/2018/2066_arc_angle.jpg)
