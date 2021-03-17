@@ -1,7 +1,7 @@
 ---
-title: JavaScript - Canvas
-date: 2021-03-14 18:03:06
-category: javascript
+title: Canvas
+date: 2021-03-17 12:03:39
+category: canvas
 thumbnail: { thumbnailSrc }
 draft: false
 ---
