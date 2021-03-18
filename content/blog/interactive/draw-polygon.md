@@ -1,14 +1,12 @@
 ---
 title: Canvas에 다각형 그리기
-date: 2021-03-17 12:03:61
-category: canvas
+date: 2021-03-18 12:03:44
+category: interactive
 thumbnail: { thumbnailSrc }
 draft: false
 ---
 
 canvas에 다각형을 그리기 위해서는 먼저 다각형의 꼭지점 좌표를 구해야 그릴 수 있다. 다각형의 꼭지점 좌표는 삼각함수를 이용해 구할 수 있다. 다각형의 꼭지점을 구한 다음 모든 꼭지점을 선으로 이어서 색을 칠하면 다각형 완성!
-
-</br>
 
 ## 삼각함수로 다각형의 꼭지점 좌표 구하기
 

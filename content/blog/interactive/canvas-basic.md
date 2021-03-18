@@ -1,7 +1,7 @@
 ---
 title: Canvas
-date: 2021-03-17 12:03:39
-category: canvas
+date: 2021-03-18 12:03:03
+category: interactive
 thumbnail: { thumbnailSrc }
 draft: false
 ---
