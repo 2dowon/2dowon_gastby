@@ -14,7 +14,7 @@ Canvas에 도형을 그리고 그 도형을 회전시키는 애니메이션을 �
 
 손으로 도형을 돌리듯이 마우스가 클릭된 상태에서 원하는 방향으로 움직이면 도형을 회전시킬 수 있다.
 
-도형을 그리는 방법은 [여기](https://2dowon.netlify.app/canvas/draw-polygon/) 참고!
+도형을 그리는 방법은 [여기](https://2dowon.netlify.app/interactive/draw-polygon/) 참고!
 
 <img src="./image/rotating2.gif"  width="800"/>
 
