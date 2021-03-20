@@ -6,8 +6,6 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-# JavaScript30
-
 <img src="./image/javascript30.png"  width="800"/>
 
 [JavaScript30](https://javascript30.com/)는 30일동안 하루에 한 개씩 Vanila JS(Frameworks, Compilers, Libraries, Boilerplate 등이 없는 순수 자바스크립트)를 이용해 총 30개의 결과물을 만드는 강의이다.
