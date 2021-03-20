@@ -6,7 +6,7 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-<img src="./image/Drumkit.gif"  width="800"/>
+<img src="./image/drum.gif"  width="800"/>
 
 JavaScript Drum Kit 프로젝트의 핵심은 다음과 같다.
 
