@@ -6,6 +6,8 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
+<img src="./image/Drumkit.gif"  width="800"/>
+
 JavaScript Drum Kit 프로젝트의 핵심은 다음과 같다.
 
 1. Keyboard Event를 통해 어떤 key가 눌렸는지 알아내서 해당 object 찾기
