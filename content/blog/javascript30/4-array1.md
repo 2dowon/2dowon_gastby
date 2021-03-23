@@ -6,14 +6,14 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-# 4 - Array Cardio Day 1
-
 Array Cardio Day 1 프로젝트는 **Array의 다양한 메서드 연습하기!** 이다. 오늘 연습할 Array의 메서드는 다음과 같다.
 
 - [filter](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 - [map](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 - [sort](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 - [reduce](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+
+<br>
 
 > 사용할 데이터
 
@@ -78,7 +78,7 @@ const people = [
 ];
 ```
 
-## `filter()`
+## filter
 
 - 필터를 이용하면 우리가 원하는 값만 받아서 새로운 배열로 반환할 수 있다
 - filter의 기본 문법
@@ -89,6 +89,8 @@ const people = [
 
 ### Filter the list of inventors for those who were born in the 1500's
 
+`console.table()` 을 이용하면 콘솔창에서 array 결과값을 표로 확인할 수 있다.
+
 ```jsx
 const fifteen = inventors.filter(
   (inventor) => inventor.year >= 1500 && inventor.year < 1600
@@ -96,7 +98,7 @@ const fifteen = inventors.filter(
 console.table(fifteen);
 ```
 
-## `map()`
+## map
 
 - 배열 안의 각각의 요소들이 callback함수를 거쳐서 다시 새로운 값으로 변환하는 것
 - 배열 안에 있는 요소들을 함수를 통해 다른 방식으로 가져오고 싶을 때 사용
@@ -133,7 +135,7 @@ const de = links
 
 <img src="./image/array1.png"  width="800"/>
 
-## `sort()`
+## sort
 
 - 배열을 일정 순서에 따라 정렬할 때 사용
 - `sort` 함수의 기본 문법
@@ -195,7 +197,7 @@ const alpha = people.sort((lastOne, nextOne) => {
 console.log(alpha);
 ```
 
-## `reduce()`
+## reduce
 
 - 우리가 원하는 시작점부터 모든 배열을 돌면서 어떤 값을 누적할 때 사용
 - reduce 함수의 기본 문법
