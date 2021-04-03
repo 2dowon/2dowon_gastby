@@ -6,8 +6,7 @@ lang: "en"
 
 # 이도원 (2dowon)
 
-<div align="right"><sub><i>Last updated: 2021.03.09</i></sub></div>
-
+<div align="right"><sub><i>Last updated: 2021.04.03</i></sub></div>
 
 **저는 `_______` 것을 좋아합니다.**
 
@@ -23,9 +22,8 @@ lang: "en"
 1. HTML / CSS, SCSS
 2. JavaScript (ES6)
 3. React
-4. Python (3.*)
+4. Python (3.\*)
 5. Flask
-6. GitHub
 
 |             |                               |
 | :---------: | ----------------------------- |
@@ -37,6 +35,18 @@ lang: "en"
 <br />
 
 # Project
+
+### STACK LIBRARY
+
+|                 |                                                |
+| --------------: | ---------------------------------------------- |
+|      **Period** | 21.3.15 ~ 2020.4.09                            |
+| **Description** | 머신러닝을 이용한 소설 추천 서비스             |
+|    **Position** | Front                                          |
+|      **Skills** | Python, Flask, HTML, CSS, JavaScript, AWS      |
+|      **GitHub** | https://github.com/2dowon/Project-StackLibrary |
+
+<br />
 
 ### PLAYBOX
 
@@ -70,6 +80,8 @@ lang: "en"
 <br />
 
 # Education
+
+### SW 마에스트로 12기
 
 ### Playdata
 
