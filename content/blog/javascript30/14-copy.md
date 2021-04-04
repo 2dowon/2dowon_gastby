@@ -103,17 +103,6 @@ console.log(players);
 // ["Wes", "Sarah", "Ryan", "Poppy"]
 console.log(team4);
 // ["Wes", "Sarah", "Ryan", "heeee hawww"]
-
-const person = {
-  name: "Wes Bos",
-  age: 80,
-};
-const cap = { ...person };
-cap.age = 99;
-console.log(person);
-// {name: "Wes Bos", age: 80}
-console.log(cap);
-// {name: "Wes Bos", age: 99}
 ```
 
 > object 변수
