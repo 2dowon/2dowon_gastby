@@ -1,6 +1,6 @@
 ---
-title: Git Stash 사용법 : 커밋하지 않고 변경사항 임시저장 하기
-date: 2021-07-11 14:07:17
+title: Git Stash 사용법 - 커밋하지 않고 변경사항 임시저장 하기
+date: 2021-07-11 18:07:36
 category: etc
 thumbnail: { thumbnailSrc }
 draft: false
