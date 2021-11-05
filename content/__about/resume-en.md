@@ -6,7 +6,7 @@ lang: "en"
 
 # 이도원 (2dowon)
 
-<div align="right"><sub><i>Last updated: 2021.04.03</i></sub></div>
+<div align="right"><sub><i>Last updated: 2021.11.05</i></sub></div>
 
 **저는 `_______` 것을 좋아합니다.**
 
@@ -19,22 +19,45 @@ lang: "en"
 
 **저는 `_______` 을 배우며 사용하고 있습니다.**
 
-1. HTML / CSS, SCSS
-2. JavaScript (ES6)
-3. React
+1. React / Redux / Jest
+2. TypeScript
+3. Firebase - Firestore, Realtime Database 
 4. Python (3.\*)
 5. Flask
+
 
 |             |                               |
 | :---------: | ----------------------------- |
 | **GitHub**  | https://github.com/2dowon     |
 |   **TIL**   | https://2dowon.netlify.app    |
 |  **Blog**   | https://dwon-lee.tistory.com/ |
+| **Resume**  | https://sneaky-dewberry-efa.notion.site/Dowon-Lee-5d8a2bc7a6234b63ad24abfd895ee4e9     |
 | **Contact** | <dwon424@gmail.com>           |
 
 <br />
 
 # Project
+
+### GOODSDUCK
+
+|                 |                                                             |
+| --------------: | ----------------------------------------------------------- |
+|      **Period** | 21.06~ 2021.11                                       |
+| **Description** |  팬들이 아이돌 굿즈를 모으는 과정에서 겪는 어려움과 불편함을 개선해 굿즈를 모으는 즐거움을 제공하는 서비스 |
+|    **Position** | Front                                                |
+|      **Skills** | React, Redux, Firebase RTDB, ReactNative, AWS S3                                 |
+|      **GitHub** | https://github.com/soma-goodsduck                    |
+|      **Demo Video** | https://www.youtube.com/watch?v=CF4kLo6neUs                   |
+
+### 여기 어때? 여기 버려!
+
+|                 |                                                             |
+| --------------: | ----------------------------------------------------------- |
+|      **Period** | 21.05.13 ~ 21.05.14                                       |
+| **Description** | 쓰레기는 쓰레기통에!를 실천하고 싶지만, 쓰레기통이 어디있는지 몰라서 '그냥 버릴까?'를 고민하는 사람들을 위해 현재 쓰레기통의 위치를 알려주는 서비스 |
+|    **Position** | Front                                             |
+|      **Skills** | Vanila JavaScript, HTML, CSS                                 |
+|      **GitHub** | https://github.com/2dowon/Soma_Hackathon_13                     |
 
 ### STACK LIBRARY
 
@@ -48,28 +71,6 @@ lang: "en"
 
 <br />
 
-### PLAYBOX
-
-|                 |                                                  |
-| --------------: | ------------------------------------------------ |
-|      **Period** | 20.12.10 ~ 2020.12.28                            |
-| **Description** | JAVA SWING을 이용한 영화 예매 프로그램           |
-|    **Position** | Front                                            |
-|      **Skills** | Java 15.0.1, MySQL 8.0.22, Google Cloud Platform |
-|      **GitHub** | https://github.com/2dowon/Project-PALYBOX        |
-
-<br />
-
-### DOTTO
-
-|                 |                                                             |
-| --------------: | ----------------------------------------------------------- |
-|      **Period** | 20.11.09 ~ 2020.11.23                                       |
-| **Description** | 역대 로또 데이터 분석을 기반으로 한 로또 번호 추첨 프로그램 |
-|    **Position** | Front & Back                                                |
-|      **Skills** | Python3.9, Flask, HTML, CSS                                 |
-|      **GitHub** | https://github.com/2dowon/Project-DOTTO                     |
-
 <br />
 
 # Certificate
@@ -82,6 +83,7 @@ lang: "en"
 # Education
 
 ### SW 마에스트로 12기
+(21.04 ~ 21.11) DUCKS 팀에서 GOODSDUCK 프로젝트를 진행
 
 ### Playdata
 
@@ -95,6 +97,6 @@ lang: "en"
 
 <br/>
 
-<sub><sup>Junior Developer, <a href="https://github.com/2dowon">@2dowon</a></sup></sub>
+<sub><sup>Junior Frontend Engineer, <a href="https://github.com/2dowon">@2dowon</a></sup></sub>
 
 </div>
