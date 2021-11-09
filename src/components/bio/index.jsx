@@ -46,8 +46,8 @@ export const Bio = () => (
                     </a>
                   )}
                   {social.facebook && (
-                    <a href={`https://www.notion.so/${social.facebook}`}>
-                      Algorithm PS
+                    <a href={`https://sneaky-dewberry-efa.notion.site/${social.facebook}`}>
+                      Resume
                     </a>
                   )}
                 </p>
