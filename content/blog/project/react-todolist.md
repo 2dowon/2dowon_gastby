@@ -5,10 +5,10 @@ category: project
 thumbnail: { thumbnailSrc }
 draft: false
 ---
+<img src="./img/todolist2.gif"  width="800"/>
 
 <img alt="JavaScript" src ="https://img.shields.io/badge/JavaScript-F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=white"/> <img alt="React" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/> <img alt="Postcss" src ="https://img.shields.io/badge/postcss-DD3A0A.svg?&style=for-the-badge&logo=postcss&logoColor=white"/> <img alt="Postman" src ="https://img.shields.io/badge/Yarn-2c8ebb.svg?&style=for-the-badge&logo=yarn&logoColor=white"/>
 
-<img src="./img/todolist2.gif"  width="800"/>
 
 ## Introduction
 
