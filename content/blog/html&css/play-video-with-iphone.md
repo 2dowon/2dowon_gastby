@@ -1,6 +1,6 @@
 ---
 title: iPhone에서 video가 전체화면 모드로 넘어가는 이슈
-date: 2022-01-26 23:01:57
+date: 2022-01-27 17:01:11
 category: html&css
 thumbnail: { thumbnailSrc }
 draft: false
